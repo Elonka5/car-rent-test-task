@@ -248,7 +248,7 @@
   gap: 8px;
 }
 
-.support-text {
+.support-text, .card-title, .notice-text {
   font-size: 16px;
 }
 
@@ -369,14 +369,19 @@
   padding-top: 6px;
 }
 
-.background-icon {
+.background {
   position: relative;
   width: 24px;
   height: 24px;
-  padding: 4.8px;
-  background-color: var(--primary-20);
+  /* padding: 4.8px;
+  background-color: var(--primary-20); */
   border-radius: 50%;
   z-index: 6;
+}
+
+.background.icon {
+  padding: 4.8px;
+  background-color: var(--primary-20);
 }
 
 .active-icon {
@@ -414,7 +419,7 @@
   background-color: var(--medium-gray);
 }
 
-.stepper-text {
+.stepper-text, .text-warning {
   font-size: 12px;
   font-weight: 300;
   line-height: 1.4;
@@ -439,20 +444,18 @@
   line-height: 1.55556;
 }
 
-.mb-4 {
-  margin-bottom: 4px;
-}
-
 /* Extras section */
 
-.extras-container {
+.extras-section,
+.insurance-section {
   padding-top: 32px;
   padding-bottom: 80px;
 }
 
-.extras-title {
+.extras-title, .insurance-title {
   font-size: 20px;
   line-height: 1.5;
+  margin-bottom: 24px;
 }
 
 .extras-list {
@@ -529,3 +532,123 @@
 
 /* Product page step-2 */
 
+.indicator-icon{
+  width: 16px;
+  height: 16px;
+  fill: var(--white);
+  z-index: 4;
+}
+
+/* .background-check {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  background-color: var(--primary-light);
+  border-radius: 50%;
+  z-index: 6;
+} */
+
+.background.check {
+  padding: 4px;
+  background-color: var(--primary-light);
+}
+
+.stepper-icon-wrapper.second {
+  margin-bottom: 7px;
+}
+
+.insurance-list{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .insurance-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+}
+
+.insurance-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  background-color: var(--white-5);
+  border-radius: 16px;
+}
+
+.insurance-item.active {
+  /* position: relative;
+  border: 2px solid var(--white-20);
+  background: var(--linear-gradient); */
+  
+  border: 2px solid var(--white-20);
+  background: url("../assets/images/step2/BG1x.png"), var(--linear-gradient);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-clip: padding-box;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  @media (max-width: 767px) {
+    .insurance-item.active {
+      background: url("../assets/images/step2/bg@2x.png"), var(--linear-gradient);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
+      background-clip: padding-box;
+    }
+  }
+}
+
+
+.insurance-title-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.insurance-price{
+font-size: 24px;
+font-weight: 500;
+line-height: 1;
+text-transform: capitalize;
+}
+
+.notice-icon{
+  width: 16px;
+  height: 16px;
+  stroke: red;
+  fill: transparent;
+}
+
+.notice-list{
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.notice-item{
+  display: flex;
+  gap: 8px;
+}
+
+.notice-item .text{
+  width: 305px;
+}
+
+.text-warning{
+  color: var(--white-30);
+}
+
+.green{
+  stroke: var(--green-active);
+}
