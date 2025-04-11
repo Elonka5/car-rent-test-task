@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav-container">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo link">
+            <svg class="logo-icon">
+              <use href="./assets/icons/icons.svg#_1"></use></svg></a>
+          <ul class="nav-list">
+            <li class="item">
+              <a href="./index.html" class="link link-current">Book</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Help</a>
+            </li>
+            <li class="item"><a href="" class="link">FAQ</a></li>
+            <li class="item"><a href="" class="link">Rental Policies</a></li>
+            <li class="item"><a href="" class="link">Blog&Guides</a></li>
+          </ul>
+        </nav>
+
+        <button type="button" class="burger-menu js-open-menu">
+          <svg class="burger-icon">
+            <use href="./assets/icons/icons.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="car-info">
+        <div class="stepper-container">
+          <div class="stepper">
+            <div class="stepper-icon-wrapper first">
+              <span class="background-icon">
+                <svg class="active-icon">
+                  <use href="./assets/icons/icons.svg#Ellipse"></use></svg></span>
+              <span class="line"></span>
+            </div>
+            <p class="stepper-text gray">Add on extras</p>
+          </div>
+          <div class="stepper">
+            <div class="stepper-icon-wrapper not-active">
+              <span class="line medium-gray right"></span>
+              <svg class="inactive-icon">
+                <use href="./assets/icons/icons.svg#Ellipse-2"></use>
+              </svg>
+              <span class="line medium-gray left"></span>
+            </div>
+            <p class="stepper-text gray">Insurance</p>
+          </div>
+          <div class="stepper">
+            <div class="stepper-icon-wrapper not-active">
+              <span class="line medium-gray right"></span>
+              <svg class="inactive-icon">
+                <use href="./assets/icons/icons.svg#Ellipse-2"></use>
+              </svg>
+              <span class="line medium-gray left"></span>
+            </div>
+            <p class="stepper-text gray">Confirm Order</p>
+          </div>
+          <div class="stepper">
+            <div class="stepper-icon-wrapper not-active last">
+              <span class="line medium-gray right"></span>
+              <svg class="inactive-icon">
+                <use href="./assets/icons/icons.svg#Ellipse-2"></use>
+              </svg>
+            </div>
+            <p class="stepper-text gray">Payment</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="car-info-wrapper">
+            <div class="car-info-thumb">
+              <img
+                src="./assets/images/step1/car@1x.png"
+                srcset="
+                  ./assets/images/step1/car@1x.png 1x,
+                  ./assets/images/step1/car@2x.png 2x
+                "
+                alt="Car for rental"
+                width="72"
+                height="48"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <h2 class="car-info-title mb-4">Volkswagen Touareg</h2>
+              <p class="feature-text gray">or similar Intermediate</p>
+              <p class="feature-text">1 rental day</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="insurance">
+      </section>
+    <section class="contact-us">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="elipse"></div>
+          <div class="avatar-wrapper">
+            <div class="avatar-thumb">
+              <img
+                class="avatar"
+                src="./assets/images/contact-us/avatar_1@1x.png"
+                srcset="
+                  ./assets/images/contact-us/avatar_1@1x.png 1x,
+                  ./assets/images/contact-us/avatar_1@2x.png 2x
+                "
+                alt="avatar of team"
+                width="56"
+                height="56"
+                loading="lazy"
+              />
+              <svg class="circle">
+                <use href="./assets/icons/icons.svg#Ellipse-green"></use>
+              </svg>
+            </div>
+            <div class="avatar-thumb">
+              <img
+                class="avatar"
+                src="./assets/images/contact-us/avatar_2@1x.png"
+                srcset="
+                  ./assets/images/contact-us/avatar_2@1x.png 1x,
+                  ./assets/images/contact-us/avatar_2@2x.png 2x
+                "
+                alt="avatar of team"
+                width="56"
+                height="56"
+                loading="lazy"
+              />
+              <svg class="circle">
+                <use href="./assets/icons/icons.svg#Ellipse-green"></use>
+              </svg>
+            </div>
+            <div class="avatar-thumb">
+              <img
+                class="avatar"
+                src="./assets/images/contact-us/avatar_3@1x.png"
+                srcset="
+                  ./assets/images/contact-us/avatar_3@1x.png 1x,
+                  ./assets/images/contact-us/avatar_3@2x.png 2x
+                "
+                alt="avatar of team"
+                width="56"
+                height="56"
+                loading="lazy"
+              />
+              <svg class="circle">
+                <use href="./assets/icons/icons.svg#Ellipse-green"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="support-wrapper">
+            <h3 class="price">Still have questions?</h3>
+            <p class="support-text">
+              Can’t find the answer you’re looking for? Please chat to our
+              friendly team.
+            </p>
+          </div>
+          <button type="button" class="main-button primary-btn btn-medium">
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </section>
+</main>
+    <footer class="footer-section">
+      <div class="container footer-container">
+        <div class="footer-wrapper">
+          <div class="footer-logo-text">
+            <a href="./index.html">
+              <svg class="logo-footer">
+                <use href="./assets/icons/icons.svg#_1"></use></svg></a>
+            <p class="feature-text gray">Your Trusted Ride Awaits.</p>
+          </div>
+          <div class="subscribe-container">
+            <p class="feature-text">Stay up to date</p>
+            <form class="subscribe-form" action="">
+              <input
+                class="subscribe-input"
+                type="text"
+                placeholder="Enter your email"
+              />
+              <button
+                class="main-button secondary-btn subscribe-btn"
+                type="submit"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-wrapper bottom">
+          <p class="feature-text gray">
+            © 2077 Untitled UI. All rights reserved.
+          </p>
+          <div class="footer-links">
+            <p class="feature-text gray">Terms</p>
+            <p class="feature-text gray">Privacy</p>
+            <p class="feature-text gray">Cookies</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
