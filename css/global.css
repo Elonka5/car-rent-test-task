@@ -11,7 +11,7 @@
   --primary-light: #c5a085;
   --background: #121214;
   --white-10: #39393b;
-  --white-20:rgba(255, 255, 255, 0.20);
+  --white-20: rgba(255, 255, 255, 0.2);
   --white-5: rgba(255, 255, 255, 0.05);
   --white-90: #e9e9e9;
   --white-80: #d3d3d3;
@@ -32,11 +32,11 @@
   --gray-basic: #667085;
   --gray-stroke: rgba(228, 231, 236, 0.5);
   --gray-fill: rgba(102, 112, 133, 0.09);
-  --checkbox-border:#D0D5DD;
+  --checkbox-border: #d0d5dd;
   --ellipse: rgba(0, 0, 0, 0.4);
   --animation-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --colors-effects-shadows-shadow-xs: rgba(16, 24, 40, 0.05);
-  --linear-gradient:linear-gradient(150deg, #B68867 6.05%, #BC8473 88.69%);
+  --linear-gradient: linear-gradient(150deg, #b68867 6.05%, #bc8473 88.69%);
 }
 
 *,
@@ -66,7 +66,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-input, select {
+input,
+select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -100,7 +101,7 @@ p {
 }
 
 table {
-  border-spacing:0cap;
+  border-spacing: 0cap;
 }
 
 a {
@@ -127,6 +128,14 @@ address {
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .main-button {
@@ -175,4 +184,16 @@ address {
 .btn-medium {
   width: 140px;
   height: 44px;
+}
+
+/* TEXT, TITLE */
+
+.sub-text-line-height{
+  line-height: 1.4;
+}
+
+/* COLOR */
+
+.gray {
+  color: var(--light-gray);
 }

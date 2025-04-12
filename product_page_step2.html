@@ -16,31 +16,51 @@
   </head>
   <body>
     <header class="header">
-      <div class="container nav-container">
-        <nav class="header-nav">
-          <a href="./index.html" class="logo link">
-            <svg class="logo-icon">
-              <use href="./assets/icons/icons.svg#_1"></use></svg></a>
-          <ul class="nav-list">
-            <li class="item">
-              <a href="./index.html" class="link link-current">Book</a>
-            </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Help</a>
-            </li>
-            <li class="item"><a href="" class="link">FAQ</a></li>
-            <li class="item"><a href="" class="link">Rental Policies</a></li>
-            <li class="item"><a href="" class="link">Blog&Guides</a></li>
-          </ul>
-        </nav>
-
-        <button type="button" class="burger-menu js-open-menu">
-          <svg class="burger-icon">
-            <use href="./assets/icons/icons.svg#menu"></use>
-          </svg>
-        </button>
-      </div>
-    </header>
+        <div class="container nav-container">
+          <nav class="header-nav">
+            <a href="./index.html" class="logo link">
+              <svg class="logo-icon">
+                <use href="./assets/icons/icons.svg#_1"></use></svg></a>
+            <ul class="nav-list">
+              <li class="item">
+                <a href="./index.html" class="link link-current">Book</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Help</a>
+              </li>
+              <li class="item"><a href="" class="link">FAQ</a></li>
+              <li class="item"><a href="" class="link">Rental Policies</a></li>
+              <li class="item"><a href="" class="link">Blog&Guides</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <div class="language-switcher" aria-label="Language switcher">
+              <button class="language-btn" aria-expanded="false" aria-controls="language-menu">
+                EN
+                <svg class="chevron-icon" aria-hidden="true">
+                  <use href="./assets/icons/icons.svg#chevron-down"></use>
+                </svg>
+              </button>
+            </div> 
+            <a href="tel:+123 456 7890" class="header-phone">
+              <svg class="phone-icon" aria-hidden="true">
+                <use href="./assets/icons/icons.svg#phone"></use>
+              </svg>
+              <span class="phone-text">+123 456 7890</span>
+            </a>
+            <div class="login-container">
+            <button type="button" class="login-btn">
+              <svg class="chevron-icon" aria-hidden="true">
+                <use href="./assets/icons/icons.svg#log-in"></use>
+              </svg>Sign In</button>
+          </div>
+          <button type="button" class="burger-menu">
+            <svg class="burger-icon">
+              <use href="./assets/icons/icons.svg#menu"></use>
+            </svg>
+          </button></div>
+        </div>
+      </header>
     <main>
       <section class="car-info">
         <div class="stepper-container">
@@ -102,8 +122,8 @@
             </div>
             <div>
               <h2 class="car-info-title">Volkswagen Touareg</h2>
-              <p class="feature-text gray">or similar Intermediate</p>
-              <p class="feature-text">1 rental day</p>
+              <p class="sub-text-line-height gray">or similar Intermediate</p>
+              <p class="sub-text-line-height">1 rental day</p>
             </div>
           </div>
         </div>
@@ -123,7 +143,7 @@
                   <svg class="notice-icon">
                     <use href="./assets/icons/icons.svg#alert-circle"></use>
                   </svg>
-                  <p class="feature-text text">
+                  <p class="sub-text-line-height text">
                     You are fully responsible for any damage to the vehicle.
                   </p>
                 </li>
@@ -131,7 +151,7 @@
                   <svg class="notice-icon">
                     <use href="./assets/icons/icons.svg#alert-circle"></use>
                   </svg>
-                  <p class="feature-text text">
+                  <p class="sub-text-line-height text">
                     Full repair costs will be charged in case of an accident or
                     damage (no financial limit).
                   </p>
@@ -154,7 +174,7 @@
                       href="./assets/icons/icons.svg#check-circle-broken-2"
                     ></use>
                   </svg>
-                  <p class="feature-text text">
+                  <p class="sub-text-line-height text">
                     Coverage for vehicle damage in case of an accident (with
                     excess).
                   </p>
@@ -165,7 +185,7 @@
                       href="./assets/icons/icons.svg#check-circle-broken-2"
                     ></use>
                   </svg>
-                  <p class="feature-text text">
+                  <p class="sub-text-line-height text">
                     Limited financial liability with a deductible/ excess.
                   </p>
                 </li>
@@ -175,7 +195,7 @@
                       href="./assets/icons/icons.svg#check-circle-broken-2"
                     ></use>
                   </svg>
-                  <p class="feature-text text">
+                  <p class="sub-text-line-height text">
                     Partial coverage for car body damages (does not cover tires,
                     windows, roof, or undercarriage).
                   </p>
@@ -194,7 +214,7 @@
                         href="./assets/icons/icons.svg#check-circle-broken-2"
                       ></use>
                     </svg>
-                    <p class="feature-text text">
+                    <p class="sub-text-line-height text">
                         Full coverage for all damages (including tires, windows, roof, and undercarriage).
                     </p>
                   </li>
@@ -204,7 +224,7 @@
                         href="./assets/icons/icons.svg#check-circle-broken-2"
                       ></use>
                     </svg>
-                    <p class="feature-text text">
+                    <p class="sub-text-line-height text">
                         Theft protection.
                     </p>
                   </li>
@@ -214,7 +234,7 @@
                         href="./assets/icons/icons.svg#check-circle-broken-2"
                       ></use>
                     </svg>
-                    <p class="feature-text text">
+                    <p class="sub-text-line-height text">
                         No deductible/excess (or minimal excess).
                     </p>
                   </li>
@@ -224,7 +244,7 @@
                         href="./assets/icons/icons.svg#check-circle-broken-2"
                       ></use>
                     </svg>
-                    <p class="feature-text text">
+                    <p class="sub-text-line-height text">
                         Roadside assistance in case of breakdowns or accidents.
                     </p>
                   </li>
@@ -318,10 +338,10 @@
             <a href="./index.html">
               <svg class="logo-footer">
                 <use href="./assets/icons/icons.svg#_1"></use></svg></a>
-            <p class="feature-text gray">Your Trusted Ride Awaits.</p>
+            <p class="sub-text-line-height gray">Your Trusted Ride Awaits.</p>
           </div>
           <div class="subscribe-container">
-            <p class="feature-text">Stay up to date</p>
+            <p class="sub-text-line-height">Stay up to date</p>
             <form class="subscribe-form" action="">
               <input
               class="styled-input subscribe-input"
@@ -338,14 +358,14 @@
           </div>
         </div>
         <div class="footer-wrapper bottom">
-          <p class="feature-text gray">
-            © 2077 Untitled UI. All rights reserved.
+          <p class="sub-text-line-height gray">
+            © 2025 Untitled UI. All rights reserved.
           </p>
-          <div class="footer-links">
-            <p class="feature-text gray">Terms</p>
-            <p class="feature-text gray">Privacy</p>
-            <p class="feature-text gray">Cookies</p>
-          </div>
+          <ul class="footer-links">
+            <li><a class="sub-text-line-height gray footer-text" href="./index.html">Terms</a></li>
+            <li><a class="sub-text-line-height gray footer-text" href="./index.html">Privacy</a></li>
+            <li><a class="sub-text-line-height gray footer-text" href="./index.html">Cookies</a></li>
+          </ul>
         </div>
       </div>
     </footer>

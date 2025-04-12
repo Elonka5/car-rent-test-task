@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    
+    <!------------------ HEADER --------------------->
+
     <header class="header">
       <div class="container nav-container">
         <nav class="header-nav">
@@ -33,19 +36,41 @@
             <li class="item"><a href="" class="link">Blog&Guides</a></li>
           </ul>
         </nav>
-
-        <button type="button" class="burger-menu js-open-menu">
+        <div class="header-actions">
+          <div class="language-switcher" aria-label="Language switcher">
+            <button class="language-btn" aria-expanded="false" aria-controls="language-menu">
+              EN
+              <svg class="chevron-icon" aria-hidden="true">
+                <use href="./assets/icons/icons.svg#chevron-down"></use>
+              </svg>
+            </button>
+          </div> 
+          <a href="tel:+123 456 7890" class="header-phone">
+            <svg class="phone-icon" aria-hidden="true">
+              <use href="./assets/icons/icons.svg#phone"></use>
+            </svg>
+            <span class="phone-text">+123 456 7890</span>
+          </a>
+          <div class="login-container">
+          <button type="button" class="login-btn">
+            <svg class="chevron-icon" aria-hidden="true">
+              <use href="./assets/icons/icons.svg#log-in"></use>
+            </svg>Sign In</button>
+        </div>
+        <button type="button" class="burger-menu">
           <svg class="burger-icon">
             <use href="./assets/icons/icons.svg#menu"></use>
           </svg>
-        </button>
+        </button></div>
       </div>
     </header>
     <main>
+
+       <!------------------ PRODUCT SECTION --------------------->   
       <section class="product-section">
         <div class="container product-container">
-          <div class="gradient"></div>
           <div class="thumb">
+            <div class="gradient"></div>
             <div class="ellipse"></div>
             <img
               class="car-img"
@@ -63,7 +88,7 @@
           <div class="list-wrapper">
             <div class="title-wrapper">
               <h2 class="car-title">Volkswagen Touareg</h2>
-              <p class="price">32,98 EUR</p>
+              <p class="price">32,98 <span class="sub-price">EUR/day</span></p>
             </div>
             <div class="features-wrapper">
               <h3 class="features-title">Included in Price</h3>
@@ -74,7 +99,7 @@
                       href="./assets/icons/icons.svg#check-circle-broken-2"
                     ></use>
                   </svg>
-                  <p class="feature-text">Airport/City Fee</p>
+                  <p class="sub-text-line-height feature-text">Airport/City Fee</p>
                 </li>
                 <li class="feature-item">
                   <svg class="icon-stroke">
@@ -82,7 +107,7 @@
                       href="./assets/icons/icons.svg#check-circle-broken-2"
                     ></use>
                   </svg>
-                  <p class="feature-text">Local Tax</p>
+                  <p class="sub-text-line-height feature-text">Local Tax</p>
                 </li>
                 <li class="feature-item">
                   <svg class="icon-stroke">
@@ -90,7 +115,7 @@
                       href="./assets/icons/icons.svg#check-circle-broken-2"
                     ></use>
                   </svg>
-                  <p>Registration Fee</p>
+                  <p class="sub-text-line-height feature-text">Registration Fee</p>
                 </li>
                 <li class="feature-item">
                   <svg class="icon-stroke">
@@ -98,7 +123,7 @@
                       href="./assets/icons/icons.svg#check-circle-broken-2"
                     ></use>
                   </svg>
-                  <p class="feature-text">Unlimited Mileage</p>
+                  <p class="sub-text-line-height feature-text">Unlimited Mileage</p>
                 </li>
               </ul>
             </div>
@@ -107,13 +132,13 @@
                 <svg class="icon-fill">
                   <use href="./assets/icons/icons.svg#icon-car-doors"></use>
                 </svg>
-                <p class="feature-text">5 Doors</p>
+                <p class="sub-text-line-height">5 Doors</p>
               </li>
               <li class="info-item">
                 <svg class="icon-stroke">
                   <use href="./assets/icons/icons.svg#luggage"></use>
                 </svg>
-                <p class="feature-text">3 Suitcase</p>
+                <p class="sub-text-line-height">3 Suitcase</p>
               </li>
               <li class="info-item">
                 <svg class="icon-stroke">
@@ -121,28 +146,31 @@
                     href="./assets/icons/icons.svg#tabler_manual-gearbox"
                   ></use>
                 </svg>
-                <p class="feature-text">5 Manual</p>
+                <p class="sub-text-line-height">5 Manual</p>
               </li>
               <li class="info-item">
                 <svg class="icon-stroke">
                   <use href="./assets/icons/icons.svg#users"></use>
                 </svg>
-                <p class="feature-text">5 Passengers</p>
+                <p class="sub-text-line-height">5 Passengers</p>
               </li>
             </ul>
           </div>
         </div>
         <a
           href="./product_page_step1.html"
-          class="main-button primary-btn btn-large"
+          class="main-button primary-btn booking-btn"
         >
           Proceed to Booking
         </a>
       </section>
+
+    <!------------------ CONTACT US SECTION --------------------->   
+
       <section class="contact-us">
         <div class="container">
           <div class="contact-wrapper">
-            <div class="elipse"></div>
+            <div class="contact-ellipse"></div>
             <div class="avatar-wrapper">
               <div class="avatar-thumb">
                 <img
@@ -210,6 +238,9 @@
         </div>
       </section>
     </main>
+
+      <!------------------ FOOTER --------------------->  
+
     <footer class="footer-section">
       <div class="container footer-container">
         <div class="footer-wrapper">
@@ -217,10 +248,10 @@
             <a href="./index.html">
               <svg class="logo-footer">
                 <use href="./assets/icons/icons.svg#_1"></use></svg></a>
-            <p class="feature-text gray">Your Trusted Ride Awaits.</p>
+            <p class="sub-text-line-height gray footer-text">Your Trusted Ride Awaits.</p>
           </div>
           <div class="subscribe-container">
-            <p class="feature-text">Stay up to date</p>
+            <p class="sub-text-line-height">Stay up to date</p>
             <form class="subscribe-form" action="">
               <input
                 class="styled-input subscribe-input"
@@ -237,14 +268,14 @@
           </div>
         </div>
         <div class="footer-wrapper bottom">
-          <p class="feature-text gray">
-            © 2077 Untitled UI. All rights reserved.
+          <p class="sub-text-line-height gray footer-text">
+            © 2025 Untitled UI. All rights reserved.
           </p>
-          <div class="footer-links">
-            <p class="feature-text gray">Terms</p>
-            <p class="feature-text gray">Privacy</p>
-            <p class="feature-text gray">Cookies</p>
-          </div>
+          <ul class="footer-links">
+            <li><a class="sub-text-line-height gray footer-text" href="./index.html">Terms</a></li>
+            <li><a class="sub-text-line-height gray footer-text" href="./index.html">Privacy</a></li>
+            <li><a class="sub-text-line-height gray footer-text" href="./index.html">Cookies</a></li>
+          </ul>
         </div>
       </div>
     </footer>

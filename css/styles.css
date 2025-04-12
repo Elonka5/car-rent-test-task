@@ -1,8 +1,17 @@
+/* HEADER */
+
 .header {
   width: 100%;
   padding-top: 4px;
   padding-bottom: 4px;
   background-color: var(--dark-grey);
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 16px;
+  padding-bottom: 16px;
+  }
 }
 
 .container.nav-container {
@@ -26,11 +35,42 @@
   display: none;
 }
 
+.header-actions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: var(--white-70);
+}
+
+.language-switcher, .login-container, .header-phone{
+  display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+  .header-phone {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  gap: 4px; 
+  }
+}
+
+.phone-icon{
+  width: 24px;
+  height: 24px;
+  stroke: var(--white-70);
+}
+
 .burger-menu {
   width: 44px;
   height: 44px;
   padding: 10px;
   background-color: transparent;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
   border: none;
 }
 
@@ -40,22 +80,50 @@
   stroke: var(--white-70);
 }
 
+@media screen and (min-width: 768px) {
+  .burger-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* PRODUCT SECTION */
+
 .product-section {
   position: relative;
-  padding-top: 40px;
+  padding-top: 16px;
   padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-section {
+    padding-top: 32px;
+  }
 }
 
 .product-container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
   margin-bottom: 32px;
 }
+
+@media screen and (min-width: 768px) {
+  .product-container {
+    flex-direction: row;
+      gap: 24px;
+  }
+}
+
 .list-wrapper {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-wrapper {
+      gap: 32px;
+  }
 }
 
 .title-wrapper,
@@ -65,6 +133,14 @@
   gap: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .title-wrapper,
+  .features-wrapper {
+    gap:16px;
+  }
+}
+
+
 .car-title {
   font-size: 20px;
   font-weight: 500;
@@ -72,9 +148,22 @@
   text-transform: capitalize;
 }
 
+@media screen and (min-width: 768px) {
+  .car-title {
+    font-size: 24px;
+  }
+}
+
 .price {
   font-size: 20px;
   font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .sub-price {
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 .car-container {
@@ -85,7 +174,7 @@
 
 .gradient {
   position: absolute;
-  top: 16px;
+  top: 0;
   width: 361px;
   height: 242px;
   flex-shrink: 0;
@@ -98,24 +187,52 @@
   filter: blur(40px);
 }
 
+@media screen and (min-width: 768px) {
+  .gradient {
+    top: -9px;
+    height: 246px;
+    border-radius: 353px;
+  }
+}
+
 .thumb {
+  display: flex;
   position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .thumb {
+    padding: 40px 16px 24px 0;
+    order: 2;
+  }
 }
 
 .ellipse {
   position: absolute;
   bottom: 3px;
+  bottom: 29px;
   width: 361px;
   height: 66px;
-  color: var(--primary);
+  background: var(--primary);
   filter: blur(40px);
   border-radius: 361px;
 }
 
+
 .car-img {
   width: 361px;
   height: 188px;
+  z-index: 2;
 }
+
+@media screen and (min-width: 768px) {
+  .car-img {
+    width: 344px;
+  }
+}
+
 
 .features-title,
 .car-info-title,
@@ -126,12 +243,25 @@
   line-height: 1.55556;
 }
 
+@media screen and (min-width: 768px) {
+  .features-title {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
 .features-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 4px;
   align-self: stretch;
+}
+
+@media screen and (min-width: 768px) {
+  .features-list {
+    gap: 8px;
+  }
 }
 
 .feature-item {
@@ -153,8 +283,11 @@
   fill: var(--white);
 }
 
-.feature-text {
-  line-height: 1.4;
+@media screen and (min-width: 768px) {
+  .feature-text {
+    font-weight: 300;
+    line-height: normal;
+  }
 }
 
 .info-list {
@@ -174,6 +307,21 @@
   flex-wrap: wrap;
 }
 
+.booking-btn {
+  width: 361px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .booking-btn {
+    width: 197px;
+  }
+}
+
+/* CONTACT US */
+
 .contact-us {
   padding: 80px 0px;
   background-size: cover;
@@ -191,6 +339,22 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contact-us {
+    background-image: url("../assets/images/contact-us/contact_us_bg_tablet@1x.webp");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  @media (min-width: 768px) {
+    .contact-us {
+      background-image: url("../assets/images/contact-us/contact_us_bg_tablet@2x.webp");
+    }
+  }
+}
+
 .contact-wrapper {
   position: relative;
   display: flex;
@@ -201,7 +365,13 @@
   gap: 32px;
 }
 
-.elipse {
+@media screen and (min-width: 768px) {
+  .contact-wrapper {
+   align-items: flex-start;
+  }
+}
+
+.contact-ellipse {
   position: absolute;
   bottom: 76px;
   width: 361px;
@@ -209,6 +379,14 @@
   border-radius: 361px;
   background: var(--ellipse);
   filter: blur(42.75px);
+}
+
+@media screen and (min-width: 768px) {
+  .contact-ellipse {
+    left: 12px;
+    width: 724px;
+    border-radius: 724px;
+  }
 }
 
 .avatar-wrapper {
@@ -253,12 +431,27 @@
 
 .support-text,
 .card-title,
-.notice-text {
+.notice-text,
+.phone-text {
   font-size: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .support-text { 
+    width: 457px;
+  }
+}
+
+/* FOOTER */
+
 .footer-section {
   padding: 40px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-section { 
+    padding: 64px 0;
+  }
 }
 
 .footer-container {
@@ -267,10 +460,24 @@
   gap: 56px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-container  { 
+   gap: 64px;
+  }
+}
+
+
 .footer-wrapper {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrapper { 
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .footer-wrapper.bottom {
@@ -291,8 +498,11 @@
   fill: var(--white);
 }
 
-.gray {
-  color: var(--light-gray);
+@media screen and (min-width: 768px) {
+  .footer-text { 
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 .subscribe-container {
@@ -323,6 +533,22 @@
 
 .subscribe-input {
   min-width: 237px;
+}
+
+@media (min-width: 768px) {
+  .subscribe-input {
+    min-width: 250px;
+  }
+}
+
+.subscribe-btn{
+  width: 108px;
+}
+
+@media (min-width: 768px) {
+  .subscribe-btn {
+   width: 124px;
+  }
 }
 
 .footer-links {
