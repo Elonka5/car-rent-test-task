@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-.logo-icon{
+.logo-icon {
   width: 150px;
   height: 18px;
   fill: var(--white);
@@ -34,10 +34,10 @@
   border: none;
 }
 
-.burger-icon{
+.burger-icon {
   width: 22px;
   height: 22px;
-  stroke: var( --white-70);
+  stroke: var(--white-70);
 }
 
 .product-section {
@@ -117,10 +117,13 @@
   height: 188px;
 }
 
-.features-title {
+.features-title,
+.car-info-title,
+.total-table th,
+.total-table td {
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.56;
+  line-height: 1.55556;
 }
 
 .features-list {
@@ -137,17 +140,17 @@
   gap: 8px;
 }
 
-.icon-stroke{
+.icon-stroke {
   width: 16px;
   height: 16px;
   fill: transparent;
-  stroke: var( --white);
+  stroke: var(--white);
 }
 
-.icon-fill{
-    width: 16px;
-    height: 16px;
-    fill: var( --white);
+.icon-fill {
+  width: 16px;
+  height: 16px;
+  fill: var(--white);
 }
 
 .feature-text {
@@ -248,7 +251,9 @@
   gap: 8px;
 }
 
-.support-text, .card-title, .notice-text {
+.support-text,
+.card-title,
+.notice-text {
   font-size: 16px;
 }
 
@@ -280,7 +285,7 @@
   gap: 24px;
 }
 
-.logo-footer{
+.logo-footer {
   width: 126px;
   height: 15px;
   fill: var(--white);
@@ -301,11 +306,7 @@
   gap: 16px;
 }
 
-.subscribe-input {
-  display: flex;
-  align-items: center;
-  align-self: stretch;
-  width: 237px;
+.styled-input {
   padding: 12px 14px;
   outline: none;
   background-color: transparent;
@@ -316,8 +317,12 @@
   transition: border-color 0.3s ease;
 }
 
-.subscribe-input:focus {
+.styled-input:focus {
   border: 1px solid var(--white-70);
+}
+
+.subscribe-input {
+  min-width: 237px;
 }
 
 .footer-links {
@@ -333,13 +338,16 @@
   justify-content: flex-end;
   align-items: flex-start;
   gap: 16px;
-  padding: 24px 0px 2px 0px;
+  padding: 24px 0 0 0;
   background-color: var(--dark-grey);
   border-top: 1px solid var(--medium-gray);
 }
 
 .stepper-container {
   display: flex;
+  width: 393px;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 .stepper {
@@ -373,8 +381,6 @@
   position: relative;
   width: 24px;
   height: 24px;
-  /* padding: 4.8px;
-  background-color: var(--primary-20); */
   border-radius: 50%;
   z-index: 6;
 }
@@ -419,7 +425,8 @@
   background-color: var(--medium-gray);
 }
 
-.stepper-text, .text-warning {
+.stepper-text,
+.text-warning {
   font-size: 12px;
   font-weight: 300;
   line-height: 1.4;
@@ -433,26 +440,27 @@
 }
 
 .car-info-thumb {
-  padding: 12px 0px;
+  padding: 12px 0;
   width: 72px;
   height: 72px;
 }
 
 .car-info-title {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.55556;
+  margin-bottom: 4px;
 }
 
 /* Extras section */
 
 .extras-section,
-.insurance-section {
+.insurance-section,
+.form-container {
   padding-top: 32px;
   padding-bottom: 80px;
 }
 
-.extras-title, .insurance-title {
+.extras-title,
+.insurance-title,
+.form-title {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 24px;
@@ -500,7 +508,7 @@
   stroke: var(--white);
 }
 
-.extras-icon {
+.extras-icon, .card-icon {
   width: 20px;
   height: 20px;
   margin-bottom: 8px;
@@ -508,11 +516,11 @@
   fill: transparent;
 }
 
-.extras-icon.active{
-  stroke: var(--white); 
+.extras-icon.active {
+  stroke: var(--white);
 }
 
-.extras-icon.fill-icon{
+.extras-icon.fill-icon {
   fill: var(--white-70);
 }
 
@@ -520,8 +528,6 @@
   height: 40px;
   margin-bottom: 5px;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.4;
 }
 
@@ -532,7 +538,7 @@
 
 /* Product page step-2 */
 
-.indicator-icon{
+.indicator-icon {
   width: 16px;
   height: 16px;
   fill: var(--white);
@@ -558,7 +564,7 @@
   margin-bottom: 7px;
 }
 
-.insurance-list{
+.insurance-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 8px;
@@ -581,10 +587,6 @@
 }
 
 .insurance-item.active {
-  /* position: relative;
-  border: 2px solid var(--white-20);
-  background: var(--linear-gradient); */
-  
   border: 2px solid var(--white-20);
   background: url("../assets/images/step2/BG1x.png"), var(--linear-gradient);
   background-size: contain;
@@ -598,7 +600,8 @@
   (min-resolution: 2dppx) {
   @media (max-width: 767px) {
     .insurance-item.active {
-      background: url("../assets/images/step2/bg@2x.png"), var(--linear-gradient);
+      background: url("../assets/images/step2/bg@2x.png"),
+        var(--linear-gradient);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: right;
@@ -607,48 +610,248 @@
   }
 }
 
-
-.insurance-title-wrapper{
+.insurance-title-wrapper {
   display: flex;
   flex-direction: column;
   gap: 8px;
   text-align: center;
 }
 
-.insurance-price{
-font-size: 24px;
-font-weight: 500;
-line-height: 1;
-text-transform: capitalize;
+.insurance-price {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: capitalize;
 }
 
-.notice-icon{
+.notice-icon {
   width: 16px;
   height: 16px;
-  stroke: red;
+  stroke: var(--red-basic);
   fill: transparent;
 }
 
-.notice-list{
+.notice-list {
   display: flex;
   flex: 1 0 0;
   flex-direction: column;
   gap: 16px;
 }
 
-.notice-item{
+.notice-item {
   display: flex;
   gap: 8px;
 }
 
-.notice-item .text{
+.notice-item .text {
   width: 305px;
 }
 
-.text-warning{
+.text-warning {
   color: var(--white-30);
 }
 
-.green{
+.green {
   stroke: var(--green-active);
+}
+
+/* Product page step-3 */
+
+.form-order {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.phone-input-wrapper {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--medium-gray);
+  box-shadow: 0px 1px 2px 0px var(--colors-effects-shadows-shadow-xs);
+  background-color: transparent;
+  transition: border-color 0.3s ease;
+}
+
+.phone-input-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  color: var(--light-gray);
+  border: none;
+  padding: 12px 8px 12px 28px;
+  cursor: pointer;
+  background-image: url("../assets/icons/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 13px center;
+}
+
+.phone-input-wrapper input {
+  flex: 1;
+  background-color: transparent;
+  color: var(--light-gray);
+  border: none;
+  padding: 12px 14px 12px 12px;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+}
+
+.phone-input-wrapper input::placeholder {
+  color: var(--light-gray);
+  opacity: 0.7;
+}
+
+.phone-input-wrapper:focus-within {
+  border: 1px solid var(--white-70);
+}
+
+.phone-input-wrapper input:focus,
+select:focus {
+  outline: none;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  font-size: 14px;
+}
+
+.required {
+  color: var(--accent);
+  margin-left: 2px;
+}
+
+@media (max-width: 767px) {
+  .phone-input-wrapper {
+    max-width: 100%;
+  }
+}
+
+.order-info-container {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details-list dt {
+  line-height: 1.4;
+}
+
+.details-list dd {
+  font-weight: 300;
+}
+
+.total-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.total-table th {
+  padding-top: 8px;
+  text-align: left;
+}
+
+.total-table td {
+  padding-top: 8px;
+  text-align: right;
+}
+
+.total-table tr {
+  border-top: 1px solid var(--medium-gray);
+}
+
+/* Checkbox */
+
+.checkbox-group {
+  display: flex;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer; 
+}
+
+.checkbox-label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid var(--checkbox-border);
+  border-radius: 6px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.check-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--white); 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: var(--accent); 
+  border-color: var(--accent); 
+}
+
+.checkbox-label input[type="checkbox"]:checked + .custom-checkbox .check-icon {
+  opacity: 1;
+}
+
+.checkbox-label input[type="checkbox"]:focus + .custom-checkbox {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.container-buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-icon{
+  margin-bottom: 0;
+  stroke: var(--white);
+}
+
+.container-buttons.desktop{
+  display: none;
 }

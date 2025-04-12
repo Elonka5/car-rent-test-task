@@ -58,20 +58,22 @@
           <div class="stepper">
             <div class="stepper-icon-wrapper second">
               <span class="line right"></span>
-              <span class="background icon">
-                <svg class="active-icon">
-                  <use href="./assets/icons/icons.svg#Ellipse"></use></svg></span>
+              <span class="background check">
+                <svg class="indicator-icon">
+                  <use href="./assets/icons/icons.svg#check"></use>
+                </svg>
+              </span>
               <span class="line"></span>
             </div>
             <p class="stepper-text gray">Insurance</p>
           </div>
           <div class="stepper">
-            <div class="stepper-icon-wrapper not-active">
-              <span class="line medium-gray right"></span>
-              <svg class="inactive-icon">
-                <use href="./assets/icons/icons.svg#Ellipse-2"></use>
-              </svg>
-              <span class="line medium-gray left"></span>
+            <div class="stepper-icon-wrapper second">
+              <span class="line right"></span>
+              <span class="background icon">
+                <svg class="active-icon">
+                  <use href="./assets/icons/icons.svg#Ellipse"></use></svg></span>
+              <span class="line"></span>
             </div>
             <p class="stepper-text gray">Confirm Order</p>
           </div>
@@ -85,159 +87,144 @@
             <p class="stepper-text gray">Payment</p>
           </div>
         </div>
-        <div class="container">
-          <div class="car-info-wrapper">
-            <div class="car-info-thumb">
-              <img
-                src="./assets/images/step1/car@1x.png"
-                srcset="
-                  ./assets/images/step1/car@1x.png 1x,
-                  ./assets/images/step1/car@2x.png 2x
-                "
-                alt="Car for rental"
-                width="72"
-                height="48"
-                loading="lazy"
+        <div class="form-container container">
+          <h2 class="form-title">Confirming Order</h2>
+          <form class="form-order">
+            <div class="form-group">
+            <label for="name">
+              First Name<span class="required">*</span></label>
+              <input
+              class="styled-input"
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Enter Your First Name"
               />
-            </div>
-            <div>
-              <h2 class="car-info-title">Volkswagen Touareg</h2>
-              <p class="feature-text gray">or similar Intermediate</p>
-              <p class="feature-text">1 rental day</p>
-            </div>
-          </div>
+            
         </div>
-      </section>
-      <section class="insurance-section">
-        <div class="container">
-          <h2 class="insurance-title">Insurance</h2>
-          <ul class="insurance-list">
-            <li class="insurance-item">
-              <div class="insurance-title-wrapper">
-                <h3 class="card-title">No Insurance</h3>
-                <p class="insurance-price">Free</p>
-              </div>
-              <p class="notice-text">Important Notice:</p>
-              <ul class="notice-list">
-                <li class="notice-item">
-                  <svg class="notice-icon">
-                    <use href="./assets/icons/icons.svg#alert-circle"></use>
-                  </svg>
-                  <p class="feature-text text">
-                    You are fully responsible for any damage to the vehicle.
-                  </p>
-                </li>
-                <li class="notice-item">
-                  <svg class="notice-icon">
-                    <use href="./assets/icons/icons.svg#alert-circle"></use>
-                  </svg>
-                  <p class="feature-text text">
-                    Full repair costs will be charged in case of an accident or
-                    damage (no financial limit).
-                  </p>
-                </li>
-              </ul>
-              <p class="text-warning">
-                We strongly recommend choosing one of the insurance options to
-                ensure a worry-free journey.
-              </p>
-            </li>
-            <li class="insurance-item active">
-              <div class="insurance-title-wrapper">
-                <h3 class="card-title">Basic Insurance</h3>
-                <p class="insurance-price">15 EUR/day</p>
-              </div>
-              <ul class="notice-list">
-                <li class="notice-item">
-                  <svg class="icon-stroke">
-                    <use
-                      href="./assets/icons/icons.svg#check-circle-broken-2"
-                    ></use>
-                  </svg>
-                  <p class="feature-text text">
-                    Coverage for vehicle damage in case of an accident (with
-                    excess).
-                  </p>
-                </li>
-                <li class="notice-item">
-                  <svg class="icon-stroke">
-                    <use
-                      href="./assets/icons/icons.svg#check-circle-broken-2"
-                    ></use>
-                  </svg>
-                  <p class="feature-text text">
-                    Limited financial liability with a deductible/ excess.
-                  </p>
-                </li>
-                <li class="notice-item">
-                  <svg class="icon-stroke">
-                    <use
-                      href="./assets/icons/icons.svg#check-circle-broken-2"
-                    ></use>
-                  </svg>
-                  <p class="feature-text text">
-                    Partial coverage for car body damages (does not cover tires,
-                    windows, roof, or undercarriage).
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li class="insurance-item">
-              <div class="insurance-title-wrapper">
-                <h3 class="card-title">Comprehensive Insurance</h3>
-                <p class="insurance-price">25 EUR/day</p>
-              </div>
-              <ul class="notice-list">
-                <li class="notice-item">
-                    <svg class="icon-stroke green">
-                      <use
-                        href="./assets/icons/icons.svg#check-circle-broken-2"
-                      ></use>
-                    </svg>
-                    <p class="feature-text text">
-                        Full coverage for all damages (including tires, windows, roof, and undercarriage).
-                    </p>
-                  </li>
-                  <li class="notice-item">
-                    <svg class="icon-stroke green">
-                      <use
-                        href="./assets/icons/icons.svg#check-circle-broken-2"
-                      ></use>
-                    </svg>
-                    <p class="feature-text text">
-                        Theft protection.
-                    </p>
-                  </li>
-                  <li class="notice-item">
-                    <svg class="icon-stroke green">
-                      <use
-                        href="./assets/icons/icons.svg#check-circle-broken-2"
-                      ></use>
-                    </svg>
-                    <p class="feature-text text">
-                        No deductible/excess (or minimal excess).
-                    </p>
-                  </li>
-                  <li class="notice-item">
-                    <svg class="icon-stroke green">
-                      <use
-                        href="./assets/icons/icons.svg#check-circle-broken-2"
-                      ></use>
-                    </svg>
-                    <p class="feature-text text">
-                        Roadside assistance in case of breakdowns or accidents.
-                    </p>
-                  </li>
-                <p></p>
-              </ul>
-            </li>
-          </ul>
-          <a
-            href="./product_page_step3.html"
-            class="main-button primary-btn btn-large"
-          >
-            Continue
-          </a>
+            <div class="form-group">
+            <label for="last_name">
+              Last Name<span class="required">*</span></label>
+              <input
+                class="styled-input"
+                id="last_name"
+                name="last_name"
+                type="text"
+                placeholder="Enter Your Last Name"
+              />
+            
+        </div>
+            <div class="form-group">
+              <label for="phone"
+                >Phone number<span class="required" aria-hidden="true">*</span></label>
+                <div class="phone-input-wrapper">
+                  <select
+                    name="country-code"
+                    id="country-code"
+                    aria-label="Country code"
+                  >
+                    <option value="+380">US</option>
+                    <option value="+1">🇺🇸 +1</option>
+                    <option value="+44">🇬🇧 +44</option>
+                    <option value="+33">🇫🇷 +33</option>
+                  </select>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    autocomplete="tel"
+                    required
+                    placeholder="+1 (555) 000-0000"
+                  />
+                </div>
+            </div>
+            <div class="form-group">
+            
+            <label for="email"
+              >Email<span class="required" aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="styled-input"
+                placeholder="olivia@untitledui.com"
+                required
+              />
+            
+        </div>
+        <div class="order-info-container">
+        
+        <dl class="details-list">
+            <div class="detail-item">
+              <dt>Date</dt>
+              <dd>Jan 1 | 08:00 - Jan 2 | 20:00</dd>
+            </div>
+            <div class="detail-item">
+              <dt>Location</dt>
+              <dd>Bratislava Bus... - Bratislava Bus...</dd>
+            </div>
+            <div class="detail-item">
+              <dt>Volkswagen Touareg</dt>
+              <dd>32,98 EUR</dd>
+            </div>
+            <div class="detail-item">
+              <dt>Basic Insurance</dt>
+              <dd>15 EUR</dd>
+            </div>
+          </dl>
+          <table class="total-table">
+            <tr>
+              <th>Total</th>
+              <td>62,98 EUR</td>
+            </tr>
+          </table>
+        </div>
+        <div class="form-group checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="terms" required>
+              <span class="custom-checkbox">
+                <svg class="check-icon" aria-hidden="true">
+                  <use href="./assets/icons/icons.svg#check"></use>
+                </svg>
+              </span>
+              I accept the terms & conditions
+            </label>
+          </div>
+          <div class="container-buttons">
+            <button
+          href="./product_page_step1.html"
+          class="main-button secondary-btn btn-large"
+        >
+        Pay Later 62,98 EUR 
+        </button>
+        <button
+          href="./product_page_step1.html"
+          class="main-button primary-btn btn-large"
+        >
+         Pay Now 62,98 EUR 
+         <svg class="card-icon">
+            <use href="./assets/icons/icons.svg#credit-card"></use>
+          </svg> 
+        </button>
+          </div>
+          <div class="container-buttons desktop">
+            <button
+          href="./product_page_step1.html"
+          class="main-button secondary-btn btn-large"
+        >
+        Pay Later 62,98 EUR 
+        </button>
+        <button
+          href="./product_page_step1.html"
+          class="main-button primary-btn btn-large"
+        >
+         Pay Now 62,98 EUR 
+         <svg class="card-icon">
+            <use href="./assets/icons/icons.svg#credit-card"></use>
+          </svg> 
+        </button>
+          </div>
+          </form>
         </div>
       </section>
       <section class="contact-us">
