@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Flexicar car rental website" />
     <title>Flexicar</title>
-    <link rel="icon" type="image/png" href="./assets/images/favicon.png" sizes="32x32" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/favicon.png"
+      sizes="32x32"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,7 +34,9 @@
           <div class="nav-wrapper">
             <a href="./index.html" aria-label="Flexicar homepage">
               <svg class="logo-icon">
-                <use href="./assets/icons/icons.svg#_1"></use></svg></a>
+                <use href="./assets/icons/icons.svg#_1"></use>
+              </svg>
+            </a>
             <ul class="nav-list">
               <li class="item">
                 <a href="./index.html" class="link link-current">Book</a>
@@ -38,8 +45,12 @@
                 <a href="./index.html" class="link">Help</a>
               </li>
               <li class="item"><a href="./index.html" class="link">FAQ</a></li>
-              <li class="item"><a href="./index.html" class="link">Rental Policies</a></li>
-              <li class="item"><a href="./index.html" class="link">Blog&Guides</a></li>
+              <li class="item">
+                <a href="./index.html" class="link">Rental Policies</a>
+              </li>
+              <li class="item">
+                <a href="./index.html" class="link">Blog&Guides</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -67,7 +78,8 @@
           <li class="login-container">
             <button type="button" class="login-btn">
               <svg class="chevron-icon" aria-hidden="true">
-                <use href="./assets/icons/icons.svg#log-in"></use></svg>Sign In
+                <use href="./assets/icons/icons.svg#log-in"></use>
+                </svg>Sign In
             </button>
           </li>
           <li class="burger-menu">
@@ -82,123 +94,136 @@
     </header>
     <main>
 
-      <!------------------ MAIN CONTENT ON DESKTOP VERSION --------------------->
-      
+      <!------------------ MAIN CONTENT ON DESKTOP --------------------->
       <div class="content-wrapper container">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/">Home</a> <svg class="breadcrumb-icon" aria-hidden="true">
-            <use href="./assets/icons/icons.svg#chevron-down"></use>
-          </svg></li>
-          <li class="breadcrumb-item"><a href="/">Search results</a> <svg class="breadcrumb-icon" aria-hidden="true">
-            <use href="./assets/icons/icons.svg#chevron-down"></use>
-          </svg></li>
-          <li class="breadcrumb-item active" aria-current="page">Volkswagen Touareg</li>
-        </ol>
-      </nav>
-      <div class="main-content">
-        <div class="car-info-section-left">
-          <section>
-            <div class="product-container">
-              <div class="thumb">
-                <div class="gradient"></div>
-                <div class="ellipse"></div>
-                <img
-                  class="car-img"
-                  src="./assets/images/car@1x.png"
-                  srcset="
-                    ./assets/images/car@1x.png 1x,
-                    ./assets/images/car@2x.png 2x
-                  "
-                  alt="Car for rental"
-                  width="361"
-                  height="188"
-                  loading="lazy"
-                />
-              </div>
-              <div class="list-wrapper">
-                <div class="title-wrapper">
-                  <h1 class="car-title">Volkswagen Touareg</h1>
-                  <p class="price">32,98 <span class="currency-price">EUR/day</span></p>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="/">Home</a>
+              <svg class="breadcrumb-icon" aria-hidden="true">
+                <use href="./assets/icons/icons.svg#chevron-down"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="/">Search results</a>
+              <svg class="breadcrumb-icon" aria-hidden="true">
+                <use href="./assets/icons/icons.svg#chevron-down"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Volkswagen Touareg
+            </li>
+          </ol>
+        </nav>
+        <div class="main-content">
+          <div class="car-info-section-left">
+            <section>
+              <div class="product-container">
+                <div class="thumb">
+                  <div class="gradient"></div>
+                  <div class="ellipse"></div>
+                  <img
+                    class="car-img"
+                    src="./assets/images/car@1x.png"
+                    srcset="
+                      ./assets/images/car@1x.png 1x,
+                      ./assets/images/car@2x.png 2x
+                    "
+                    alt="Car for rental"
+                    width="361"
+                    height="188"
+                    loading="lazy"
+                  />
                 </div>
-                <div class="features-wrapper">
-                  <h2 class="features-title">Included in Price</h2>
-                  <ul class="features-list">
-                    <li class="feature-item">
-                      <svg class="icon-stroke" aria-hidden="true">
+                <div class="list-wrapper">
+                  <div class="title-wrapper">
+                    <h1 class="car-title">Volkswagen Touareg</h1>
+                    <p class="price">
+                      32,98 <span class="currency-price">EUR/day</span>
+                    </p>
+                  </div>
+                  <div class="features-wrapper">
+                    <h2 class="features-title">Included in Price</h2>
+                    <ul class="features-list">
+                      <li class="feature-item">
+                        <svg class="icon-stroke" aria-hidden="true">
+                          <use
+                            href="./assets/icons/icons.svg#check-circle-broken-2"
+                          ></use>
+                        </svg>
+                        <p class="sub-text-line-height feature-text">
+                          Airport/City Fee
+                        </p>
+                      </li>
+                      <li class="feature-item">
+                        <svg class="icon-stroke" aria-hidden="true">
+                          <use
+                            href="./assets/icons/icons.svg#check-circle-broken-2"
+                          ></use>
+                        </svg>
+                        <p class="sub-text-line-height feature-text">
+                          Local Tax
+                        </p>
+                      </li>
+                      <li class="feature-item">
+                        <svg class="icon-stroke" aria-hidden="true">
+                          <use
+                            href="./assets/icons/icons.svg#check-circle-broken-2"
+                          ></use>
+                        </svg>
+                        <p class="sub-text-line-height feature-text">
+                          Registration Fee
+                        </p>
+                      </li>
+                      <li class="feature-item">
+                        <svg class="icon-stroke" aria-hidden="true">
+                          <use
+                            href="./assets/icons/icons.svg#check-circle-broken-2"
+                          ></use>
+                        </svg>
+                        <p class="sub-text-line-height feature-text">
+                          Unlimited Mileage
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <ul class="info-list">
+                    <li class="info-item">
+                      <svg class="icon-fill">
                         <use
-                          href="./assets/icons/icons.svg#check-circle-broken-2"
+                          href="./assets/icons/icons.svg#icon-car-doors"
                         ></use>
                       </svg>
-                      <p class="sub-text-line-height feature-text">
-                        Airport/City Fee
-                      </p>
+                      <p class="sub-text-line-height">5 Doors</p>
                     </li>
-                    <li class="feature-item">
+                    <li class="info-item">
                       <svg class="icon-stroke" aria-hidden="true">
-                        <use
-                          href="./assets/icons/icons.svg#check-circle-broken-2"
-                        ></use>
+                        <use href="./assets/icons/icons.svg#luggage"></use>
                       </svg>
-                      <p class="sub-text-line-height feature-text">Local Tax</p>
+                      <p class="sub-text-line-height">3 Suitcase</p>
                     </li>
-                    <li class="feature-item">
+                    <li class="info-item">
                       <svg class="icon-stroke" aria-hidden="true">
                         <use
-                          href="./assets/icons/icons.svg#check-circle-broken-2"
+                          href="./assets/icons/icons.svg#tabler_manual-gearbox"
                         ></use>
                       </svg>
-                      <p class="sub-text-line-height feature-text">
-                        Registration Fee
-                      </p>
+                      <p class="sub-text-line-height">5 Manual</p>
                     </li>
-                    <li class="feature-item">
+                    <li class="info-item">
                       <svg class="icon-stroke" aria-hidden="true">
-                        <use
-                          href="./assets/icons/icons.svg#check-circle-broken-2"
-                        ></use>
+                        <use href="./assets/icons/icons.svg#users"></use>
                       </svg>
-                      <p class="sub-text-line-height feature-text">
-                        Unlimited Mileage
-                      </p>
+                      <p class="sub-text-line-height">5 Passengers</p>
                     </li>
                   </ul>
                 </div>
-                <ul class="info-list">
-                  <li class="info-item">
-                    <svg class="icon-fill">
-                      <use href="./assets/icons/icons.svg#icon-car-doors"></use>
-                    </svg>
-                    <p class="sub-text-line-height">5 Doors</p>
-                  </li>
-                  <li class="info-item">
-                    <svg class="icon-stroke" aria-hidden="true">
-                      <use href="./assets/icons/icons.svg#luggage"></use>
-                    </svg>
-                    <p class="sub-text-line-height">3 Suitcase</p>
-                  </li>
-                  <li class="info-item">
-                    <svg class="icon-stroke" aria-hidden="true">
-                      <use
-                        href="./assets/icons/icons.svg#tabler_manual-gearbox"
-                      ></use>
-                    </svg>
-                    <p class="sub-text-line-height">5 Manual</p>
-                  </li>
-                  <li class="info-item">
-                    <svg class="icon-stroke" aria-hidden="true">
-                      <use href="./assets/icons/icons.svg#users"></use>
-                    </svg>
-                    <p class="sub-text-line-height">5 Passengers</p>
-                  </li>
-                </ul>
               </div>
-            </div>
-          </section>
+            </section>
 
-      <!------------------ EXTRAS SECTION ON DESKTOP --------------------->
+            <!------------------ EXTRAS SECTION ON DESKTOP --------------------->
 
-          <section class="extras-section">
+            <section class="extras-section">
               <h2 class="extras-title">Add on extras</h2>
               <ul class="extras-list">
                 <li class="extras-item">
@@ -211,7 +236,10 @@
                       <p class="extras-price">15 EUR</p>
                     </div>
                   </div>
-                  <button class="extras-button active-btn" aria-label="Delete Unlimited Mileage">
+                  <button
+                    class="extras-button active-btn"
+                    aria-label="Delete Unlimited Mileage"
+                  >
                     <svg class="btn-icon">
                       <use href="./assets/icons/icons.svg#minus"></use>
                     </svg>
@@ -227,7 +255,10 @@
                       <p class="extras-price">15 EUR</p>
                     </div>
                   </div>
-                  <button class="extras-button" aria-label="Add Cross-border Fee">
+                  <button
+                    class="extras-button"
+                    aria-label="Add Cross-border Fee"
+                  >
                     <svg class="btn-icon">
                       <use href="./assets/icons/icons.svg#plus"></use>
                     </svg>
@@ -243,7 +274,10 @@
                       <p class="extras-price">15 EUR</p>
                     </div>
                   </div>
-                  <button class="extras-button" aria-label="Add Full Tank Service">
+                  <button
+                    class="extras-button"
+                    aria-label="Add Full Tank Service"
+                  >
                     <svg class="btn-icon">
                       <use href="./assets/icons/icons.svg#plus"></use>
                     </svg>
@@ -259,7 +293,7 @@
                       <p class="extras-price">15 EUR</p>
                     </div>
                   </div>
-                  <button class="extras-button" aria-label="Add Child Seat" >
+                  <button class="extras-button" aria-label="Add Child Seat">
                     <svg class="btn-icon">
                       <use href="./assets/icons/icons.svg#plus"></use>
                     </svg>
@@ -277,7 +311,10 @@
                       <p class="extras-price">15 EUR</p>
                     </div>
                   </div>
-                  <button class="extras-button" aria-label="Add GPS Navigation System">
+                  <button
+                    class="extras-button"
+                    aria-label="Add GPS Navigation System"
+                  >
                     <svg class="btn-icon">
                       <use href="./assets/icons/icons.svg#plus"></use>
                     </svg>
@@ -302,14 +339,19 @@
                 <li class="extras-item">
                   <div class="extras-wrapper-left">
                     <svg class="extras-icon fill-icon">
-                      <use href="./assets/icons/icons.svg#additional-driver"></use>
+                      <use
+                        href="./assets/icons/icons.svg#additional-driver"
+                      ></use>
                     </svg>
                     <div class="service-wrapper">
                       <h3 class="extras-item-title">Additional Driver</h3>
                       <p class="extras-price">15 EUR</p>
                     </div>
                   </div>
-                  <button class="extras-button" aria-label="Add Additional Driver">
+                  <button
+                    class="extras-button"
+                    aria-label="Add Additional Driver"
+                  >
                     <svg class="btn-icon">
                       <use href="./assets/icons/icons.svg#plus"></use>
                     </svg>
@@ -321,23 +363,27 @@
                       <use href="./assets/icons/icons.svg#headphones"></use>
                     </svg>
                     <div class="service-wrapper">
-                      <h3 class="extras-item-title">Roadside assistance waiver</h3>
+                      <h3 class="extras-item-title">
+                        Roadside assistance waiver
+                      </h3>
                       <p class="extras-price">15 EUR</p>
                     </div>
                   </div>
-                  <button class="extras-button" aria-label="Add Roadside assistance waiver">
+                  <button
+                    class="extras-button"
+                    aria-label="Add Roadside assistance waiver"
+                  >
                     <svg class="btn-icon">
                       <use href="./assets/icons/icons.svg#plus"></use>
                     </svg>
                   </button>
                 </li>
               </ul>
-          </section>
+            </section>
 
-          <!------------------ INSURANCE SECTION  --------------------->
+            <!------------------ INSURANCE SECTION  --------------------->
 
-          <section class="insurance-section">
-            
+            <section class="insurance-section">
               <h2 class="insurance-title">Insurance</h2>
               <ul class="insurance-list">
                 <li class="insurance-item">
@@ -346,29 +392,37 @@
                     <p class="insurance-price">Free</p>
                   </div>
                   <div>
-                  <p class="notice-text">Important Notice:</p>
-                  <ul class="notice-list">
-                    <li class="notice-item">
-                      <svg class="notice-icon" aria-hidden="true">
-                        <use href="./assets/icons/icons.svg#alert-circle"></use>
-                      </svg>
-                      <p class="sub-text-line-height text">
-                        You are fully responsible for any damage to the vehicle.
-                      </p>
-                    </li>
-                    <li class="notice-item">
-                      <svg class="notice-icon" aria-hidden="true">
-                        <use href="./assets/icons/icons.svg#alert-circle"></use>
-                      </svg>
-                      <p class="sub-text-line-height text">
-                        Full repair costs will be charged in case of an accident or
-                        damage (no financial limit).
-                      </p>
-                    </li>
-                  </ul></div>
-                  <p class="text-warning"><strong>
-                    We strongly recommend choosing one of the insurance options to
-                    ensure a worry-free journey.</strong>
+                    <p class="notice-text">Important Notice:</p>
+                    <ul class="notice-list">
+                      <li class="notice-item">
+                        <svg class="notice-icon" aria-hidden="true">
+                          <use
+                            href="./assets/icons/icons.svg#alert-circle"
+                          ></use>
+                        </svg>
+                        <p class="sub-text-line-height text">
+                          You are fully responsible for any damage to the
+                          vehicle.
+                        </p>
+                      </li>
+                      <li class="notice-item">
+                        <svg class="notice-icon" aria-hidden="true">
+                          <use
+                            href="./assets/icons/icons.svg#alert-circle"
+                          ></use>
+                        </svg>
+                        <p class="sub-text-line-height text">
+                          Full repair costs will be charged in case of an
+                          accident or damage (no financial limit).
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="text-warning">
+                    <strong>
+                      We strongly recommend choosing one of the insurance
+                      options to ensure a worry-free journey.</strong
+                    >
                   </p>
                 </li>
                 <li class="insurance-item active">
@@ -405,8 +459,8 @@
                         ></use>
                       </svg>
                       <p class="sub-text-line-height text">
-                        Partial coverage for car body damages (does not cover tires,
-                        windows, roof, or undercarriage).
+                        Partial coverage for car body damages (does not cover
+                        tires, windows, roof, or undercarriage).
                       </p>
                     </li>
                   </ul>
@@ -418,89 +472,88 @@
                   </div>
                   <ul class="notice-list">
                     <li class="notice-item">
-                        <svg class="icon-stroke green" aria-hidden="true">
-                          <use
-                            href="./assets/icons/icons.svg#check-circle-broken-2"
-                          ></use>
-                        </svg>
-                        <p class="sub-text-line-height text">
-                            Full coverage for all damages (including tires, windows, roof, and undercarriage).
-                        </p>
-                      </li>
-                      <li class="notice-item">
-                        <svg class="icon-stroke green" aria-hidden="true">
-                          <use
-                            href="./assets/icons/icons.svg#check-circle-broken-2"
-                          ></use>
-                        </svg>
-                        <p class="sub-text-line-height text">
-                            Theft protection.
-                        </p>
-                      </li>
-                      <li class="notice-item">
-                        <svg class="icon-stroke green" aria-hidden="true">
-                          <use
-                            href="./assets/icons/icons.svg#check-circle-broken-2"
-                          ></use>
-                        </svg>
-                        <p class="sub-text-line-height text">
-                            No deductible/excess (or minimal excess).
-                        </p>
-                      </li>
-                      <li class="notice-item">
-                        <svg class="icon-stroke green" aria-hidden="true">
-                          <use
-                            href="./assets/icons/icons.svg#check-circle-broken-2"
-                          ></use>
-                        </svg>
-                        <p class="sub-text-line-height text">
-                            Roadside assistance in case of breakdowns or accidents.
-                        </p>
-                      </li>
+                      <svg class="icon-stroke green" aria-hidden="true">
+                        <use
+                          href="./assets/icons/icons.svg#check-circle-broken-2"
+                        ></use>
+                      </svg>
+                      <p class="sub-text-line-height text">
+                        Full coverage for all damages (including tires, windows,
+                        roof, and undercarriage).
+                      </p>
+                    </li>
+                    <li class="notice-item">
+                      <svg class="icon-stroke green" aria-hidden="true">
+                        <use
+                          href="./assets/icons/icons.svg#check-circle-broken-2"
+                        ></use>
+                      </svg>
+                      <p class="sub-text-line-height text">Theft protection.</p>
+                    </li>
+                    <li class="notice-item">
+                      <svg class="icon-stroke green" aria-hidden="true">
+                        <use
+                          href="./assets/icons/icons.svg#check-circle-broken-2"
+                        ></use>
+                      </svg>
+                      <p class="sub-text-line-height text">
+                        No deductible/excess (or minimal excess).
+                      </p>
+                    </li>
+                    <li class="notice-item">
+                      <svg class="icon-stroke green" aria-hidden="true">
+                        <use
+                          href="./assets/icons/icons.svg#check-circle-broken-2"
+                        ></use>
+                      </svg>
+                      <p class="sub-text-line-height text">
+                        Roadside assistance in case of breakdowns or accidents.
+                      </p>
+                    </li>
                   </ul>
                 </li>
               </ul>
-            
-          </section>
-        </div>
+            </section>
+          </div>
 
-      <!------------------ FORM SECTION --------------------->
+          <!------------------ FORM SECTION --------------------->
 
-        <section class="form-section">
+          <section class="form-section">
             <h2 class="form-title">Confirming Order</h2>
             <form class="form-order" aria-labelledby="form-title">
               <div class="form-main-content">
-              <div class="form-group">
-              <label for="name">
-                First Name<span class="required">*</span></label>
-                <input
-                class="styled-input"
-                  id="name"
-                  name="name"
-                  type="text"
-                  placeholder="Enter Your First Name"
-                  required
-                  aria-required="true"
-                />
-              
-          </div>
-              <div class="form-group">
-              <label for="last_name">
-                Last Name<span class="required">*</span></label>
-                <input
-                  class="styled-input"
-                  id="last_name"
-                  name="last_name"
-                  type="text"
-                  placeholder="Enter Your Last Name"
-                  required
-                  aria-required="true"
-                />
-              
-          </div>
-              <div class="form-group">
-                <label for="phone"
-                  >Phone number<span class="required">*</span></label>
+                <div class="form-group">
+                  <label for="name">
+                    First Name<span class="required">*</span></label
+                  >
+                  <input
+                    class="styled-input"
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Enter Your First Name"
+                    required
+                    aria-required="true"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="last_name">
+                    Last Name<span class="required">*</span></label
+                  >
+                  <input
+                    class="styled-input"
+                    id="last_name"
+                    name="last_name"
+                    type="text"
+                    placeholder="Enter Your Last Name"
+                    required
+                    aria-required="true"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone"
+                    >Phone number<span class="required">*</span></label
+                  >
                   <div class="phone-input-wrapper">
                     <select
                       name="country-code"
@@ -522,80 +575,84 @@
                       aria-describedby="phone-format"
                     />
                   </div>
+                </div>
+                <div class="form-group">
+                  <label for="email"
+                    >Email<span class="required">*</span></label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="styled-input"
+                    placeholder="olivia@untitledui.com"
+                    required
+                    aria-required="true"
+                  />
+                </div>
               </div>
-              <div class="form-group">
-              
-              <label for="email"
-                >Email<span class="required">*</span></label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="styled-input"
-                  placeholder="olivia@untitledui.com"
-                  required
-          aria-required="true"
-                />
-              
-          </div></div>
-          <div class="order-info-container">
-          
-          <dl class="details-list">
-              <div class="detail-item">
-                <dt>Date</dt>
-                <dd>Jan 1 | 08:00 - Jan 2 | 20:00</dd>
+              <div class="order-info-container">
+                <dl class="details-list">
+                  <div class="detail-item">
+                    <dt>Date</dt>
+                    <dd>Jan 1 | 08:00 - Jan 2 | 20:00</dd>
+                  </div>
+                  <div class="detail-item">
+                    <dt>Location</dt>
+                    <dd>Bratislava Bus... - Bratislava Bus...</dd>
+                  </div>
+                  <div class="detail-item">
+                    <dt>Volkswagen Touareg</dt>
+                    <dd>32,98 EUR</dd>
+                  </div>
+                  <div class="detail-item">
+                    <dt>Basic Insurance</dt>
+                    <dd>15 EUR</dd>
+                  </div>
+                </dl>
+                <table class="total-table">
+                  <tr>
+                    <th>Total</th>
+                    <td>62,98 EUR</td>
+                  </tr>
+                </table>
               </div>
-              <div class="detail-item">
-                <dt>Location</dt>
-                <dd>Bratislava Bus... - Bratislava Bus...</dd>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input
+                    type="checkbox"
+                    name="terms"
+                    required
+                    aria-required="true"
+                  />
+                  <span class="custom-checkbox">
+                    <svg class="check-icon" aria-hidden="true">
+                      <use href="./assets/icons/icons.svg#check"></use>
+                    </svg>
+                  </span>
+                  I accept the terms & conditions
+                </label>
               </div>
-              <div class="detail-item">
-                <dt>Volkswagen Touareg</dt>
-                <dd>32,98 EUR</dd>
+              <div class="container-buttons desktop">
+                <button
+                  href="./product_page_step1.html"
+                  class="main-button secondary-btn pay-btn-desktop"
+                >
+                  Pay Cash
+                </button>
+                <button
+                  href="./product_page_step1.html"
+                  class="main-button primary-btn pay-btn-desktop"
+                >
+                  Pay Card
+                </button>
               </div>
-              <div class="detail-item">
-                <dt>Basic Insurance</dt>
-                <dd>15 EUR</dd>
-              </div>
-            </dl>
-            <table class="total-table">
-              <tr>
-                <th>Total</th>
-                <td>62,98 EUR</td>
-              </tr>
-            </table>
-          </div>
-          <div class="checkbox-group">
-              <label class="checkbox-label">
-                <input type="checkbox" name="terms" required aria-required="true">
-                <span class="custom-checkbox">
-                  <svg class="check-icon" aria-hidden="true">
-                    <use href="./assets/icons/icons.svg#check"></use>
-                  </svg>
-                </span>
-                I accept the terms & conditions
-              </label>
-            </div>
-            <div class="container-buttons desktop">
-              <button
-            href="./product_page_step1.html"
-            class="main-button secondary-btn pay-btn-desktop"
-          >
-          Pay Cash 
-          </button>
-          <button
-            href="./product_page_step1.html"
-            class="main-button primary-btn pay-btn-desktop"
-          >
-           Pay Card 
-          </button>
-            </div>
             </form>
-        </section>
-      </div>
+          </section>
+        </div>
       </div>
 
-      <!------------------ PRODUCT SECTION --------------------->
+      <!------------------ MAIN CONTENT ON MOBILE --------------------->
       <section class="product-section">
         <div class="container product-container">
           <div class="thumb">
@@ -700,8 +757,7 @@
         </a>
       </section>
 
-      <!------------------ CONTACT US SECTION --------------------->
-
+      <!------------------ CONTACT US SECTION(MOBILE & DESKTOP) --------------------->
       <section class="contact-us">
         <div class="container">
           <div class="contact-wrapper">
@@ -762,8 +818,10 @@
             <div class="support-wrapper">
               <h3 class="support-title">Still have questions?</h3>
               <p class="support-text">
-                Can’t find the answer you’re looking for?<span class="support-sub-text">Please chat to our
-                friendly team.</span>
+                Can’t find the answer you’re looking for?<span
+                  class="support-sub-text"
+                  >Please chat to our friendly team.</span
+                >
               </p>
             </div>
             <button type="button" class="main-button primary-btn contact-btn">
@@ -774,15 +832,16 @@
       </section>
     </main>
 
-    <!------------------ FOOTER --------------------->
-
+    <!------------------ FOOTER (MOBILE & DESKTOP) --------------------->
     <footer class="footer-section">
       <div class="container footer-container">
         <div class="footer-wrapper">
           <div class="footer-logo-text">
-            <a href="./index.html"  aria-label="Flexicar homepage">
+            <a href="./index.html" aria-label="Flexicar homepage">
               <svg class="logo-footer">
-                <use href="./assets/icons/icons.svg#_1"></use></svg></a>
+                <use href="./assets/icons/icons.svg#_1"></use>
+                </svg>
+            </a>
             <p class="sub-text-line-height gray footer-text">
               Your Trusted Ride Awaits.
             </p>
