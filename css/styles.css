@@ -14,10 +14,20 @@
   }
 }
 
-.container.nav-container {
+.nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 393px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-container {
+    width: 768px;
+  }
 }
 
 .header-nav {
@@ -450,7 +460,7 @@
 
 @media screen and (min-width: 768px) {
   .footer-section { 
-    padding: 64px 0;
+    padding: 64px 0 48px 0;
   }
 }
 
@@ -558,16 +568,26 @@
 
 /* Product page step-1 */
 
+/* CAR SECTION */
+
 .car-info {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
   gap: 16px;
-  padding: 24px 0 0 0;
+  padding-top: 24px;
   background-color: var(--dark-grey);
   border-top: 1px solid var(--medium-gray);
 }
+
+@media (min-width: 768px) {
+  .car-info {
+    padding-top: 16px;
+  }
+}
+
+/* STEPPER */
 
 .stepper-container {
   display: flex;
@@ -575,6 +595,13 @@
  margin-left: auto;
  margin-right: auto;
 }
+
+@media (min-width: 768px) {
+  .stepper-container {
+    width: 768px;
+  }
+}
+
 
 .stepper {
   display: flex;
@@ -584,10 +611,23 @@
   height: 46px;
 }
 
+@media (min-width: 768px) {
+  .stepper {
+    width: 192px;
+    height: 51px;
+  }
+}
+
 .stepper-icon-wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 13px;
+}
+
+@media (min-width: 768px) {
+  .stepper-icon-wrapper {
+    margin-bottom: 12px;
+  }
 }
 
 .stepper-icon-wrapper.first {
@@ -595,12 +635,40 @@
   margin-bottom: 7px;
 }
 
+@media (min-width: 768px) {
+  .stepper-icon-wrapper.first {
+    padding-left: 84px;
+    margin-bottom: 12px;
+  }
+}
+
 .stepper-icon-wrapper.last {
   padding-right: 43px;
 }
 
+@media (min-width: 768px) {
+  .stepper-icon-wrapper.last {
+    padding-right: 84px;
+  }
+}
+
 .stepper-icon-wrapper.not-active {
   padding-top: 6px;
+}
+
+@media (min-width: 768px) {
+  .stepper-icon-wrapper.not-active {
+    padding-top: 0;
+  }
+}
+
+.stepper-icon-wrapper.second {
+  margin-bottom: 7px;
+}
+@media (min-width: 768px) {
+  .stepper-icon-wrapper.second {
+    margin-bottom: 12px;
+  }
 }
 
 .background {
@@ -614,6 +682,21 @@
 .background.icon {
   padding: 4.8px;
   background-color: var(--primary-20);
+}
+
+.icon-wrapper{
+  display: flex;
+  align-items: center;
+  width: 12px;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .icon-wrapper{
+    width: 24px;
+    padding: 6px;
+    
+  }
 }
 
 .active-icon {
@@ -639,17 +722,49 @@
   margin-left: -12px;
 }
 
+@media (min-width: 768px) {
+  .line {
+    width: 96px;
+  }
+}
+
+.line.medium-gray {
+  background-color: var(--medium-gray);
+}
+
 .left {
   margin-left: -6px;
 }
+
+@media (min-width: 768px) {
+  .left  {
+    margin-left: -12px;
+  }
+}
+
 .right {
   margin-right: -6px;
   margin-left: 0;
 }
 
-.medium-gray {
-  background-color: var(--medium-gray);
+@media (min-width: 768px) {
+  .right  {
+    margin-right: -12px;
+  }
 }
+
+.indicator-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--white);
+  z-index: 4;
+}
+
+.background.check {
+  padding: 4px;
+  background-color: var(--primary-light);
+}
+
 
 .stepper-text,
 .text-warning {
@@ -660,9 +775,14 @@
 
 .car-info-wrapper {
   display: flex;
-  /* align-items: center; */
   padding: 8px 0 16px 0;
   gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .car-info-wrapper  {
+   gap: 24px;
+  }
 }
 
 .car-info-thumb {
@@ -675,7 +795,7 @@
   margin-bottom: 4px;
 }
 
-/* Extras section */
+/* EXTRAS SECTION */
 
 .extras-section,
 .insurance-section,
@@ -692,6 +812,12 @@
   margin-bottom: 24px;
 }
 
+@media (min-width: 768px) {
+  .extras-title {
+    margin-bottom:32px;
+  }
+}
+
 .extras-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -699,13 +825,22 @@
   margin-bottom: 32px;
 }
 
-.extras-item {
-  display: flex;
-  width: 176px;
-  height: 108px;
+@media (min-width: 768px) {
+  .extras-list {
+    gap: 24px
+  }
 }
 
+.extras-item {
+  display: flex;
+  /* width: 176px;
+  height: 108px; */
+}
+
+
 .extras-wrapper-left {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding: 8px 8px 8px 16px;
   background-color: var(--white-10);
@@ -713,8 +848,52 @@
   border-bottom-left-radius: 8px;
 }
 
+@media (min-width: 768px) {
+  .extras-wrapper-left {
+    flex-direction: row;
+    padding: 8px 16px 8px 8px;
+    gap: 8px;
+  }
+}
+
 .extras-wrapper-left.active {
   background-color: var(--accent);
+}
+
+.service-wrapper{
+  border-left: none;
+}
+@media (min-width: 768px) {
+  .service-wrapper {
+    border-left: 1px solid var( --white-20);
+    padding-left: 16px;
+  }
+}
+
+.extras-item-title {
+  height: 40px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+@media (min-width: 768px) {
+  .extras-item-title {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: normal;
+  }
+}
+
+.extras-price {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .extras-price {
+    font-size: 20px;
+    font-weight: 700;
+  }
 }
 
 .extras-button {
@@ -722,6 +901,12 @@
   background-color: var(--medium-gray);
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .extras-button {
+    padding: 14px 10px;
+  }
 }
 
 .active-btn {
@@ -742,6 +927,12 @@
   fill: transparent;
 }
 
+@media (min-width: 768px) {
+  .extras-icon {
+    margin-bottom: 0;
+  }
+}
+
 .extras-icon.active {
   stroke: var(--white);
 }
@@ -750,45 +941,10 @@
   fill: var(--white-70);
 }
 
-.extras-item-title {
-  height: 40px;
-  margin-bottom: 5px;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.extras-price {
-  font-size: 16px;
-  font-weight: 600;
-}
 
 /* Product page step-2 */
 
-.indicator-icon {
-  width: 16px;
-  height: 16px;
-  fill: var(--white);
-  z-index: 4;
-}
-
-/* .background-check {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  padding: 4px;
-  background-color: var(--primary-light);
-  border-radius: 50%;
-  z-index: 6;
-} */
-
-.background.check {
-  padding: 4px;
-  background-color: var(--primary-light);
-}
-
-.stepper-icon-wrapper.second {
-  margin-bottom: 7px;
-}
+/* INSURANCE SECTION */
 
 .insurance-list {
   display: grid;
@@ -799,7 +955,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .insurance-list {
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    gap: 16px;
   }
 }
 
@@ -812,29 +968,68 @@
   border-radius: 16px;
 }
 
-.insurance-item.active {
+/* .insurance-item.active {
   border: 2px solid var(--white-20);
-  background: url("../assets/images/step2/BG1x.png"), var(--linear-gradient);
+  background: url("../assets/images/step2/bg_mobile@1x.png"), var(--linear-gradient);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
   background-clip: padding-box;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  @media (max-width: 767px) {
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+       (max-width: 767px) and (min-resolution: 192dpi),
+       (max-width: 767px) and (min-resolution: 2dppx) {
     .insurance-item.active {
-      background: url("../assets/images/step2/bg@2x.png"),
+      background: url("../assets/images/step2/bg_mobile@2x.png"),
         var(--linear-gradient);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: right;
       background-clip: padding-box;
     }
+  } */
+
+  .insurance-item.active {
+    border: 2px solid var(--white-20);
+    background: -webkit-image-set(
+      url("../assets/images/step2/bg_mobile@1x.png") 1x,
+      url("../assets/images/step2/bg_mobile@2x.png") 2x
+    ), var(--linear-gradient);
+    background: image-set(
+      url("../assets/images/step2/bg_mobile@1x.png") 1x,
+      url("../assets/images/step2/bg_mobile@2x.png") 2x
+    ), var(--linear-gradient);
+  
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-clip: border-box;
+background-origin: border-box;
   }
-}
+
+  @media (min-width: 768px) and (max-width: 1919px) {
+    .insurance-item.active {
+      background: -webkit-image-set(
+          url("../assets/images/step2/bg_tablet@1x.png") 1x,
+          url("../assets/images/step2/bg_tablet@2x.png") 2x
+        ),
+        var(--linear-gradient);
+  
+      background: image-set(
+          url("../assets/images/step2/bg_tablet@1x.png") 1x,
+          url("../assets/images/step2/bg_tablet@2x.png") 2x
+        ),
+        var(--linear-gradient);
+  
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
+      background-clip: border-box;
+      background-origin: border-box;
+    }
+  }
+  
 
 .insurance-title-wrapper {
   display: flex;
@@ -873,13 +1068,28 @@
   width: 305px;
 }
 
+@media (min-width: 768px) and (max-width: 1919px) {
+  .notice-item .text {
+    width: 178px;
+  }
+}
+
 .text-warning {
   color: var(--white-30);
 }
 
-.green {
-  stroke: var(--green-active);
+.continue-btn{
+  width: 361px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
 }
+@media (min-width: 768px) and (max-width: 1919px) {
+  .continue-btn {
+    width: 210px;
+  }
+}
+
 
 /* Product page step-3 */
 
