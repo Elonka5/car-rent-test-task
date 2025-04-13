@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -20,48 +21,59 @@
 
     <header class="header">
       <div class="nav-container">
-        <nav class="header-nav">
-          <a href="./index.html" class="logo link">
-            <svg class="logo-icon">
-              <use href="./assets/icons/icons.svg#_1"></use></svg></a>
-          <ul class="nav-list">
-            <li class="item">
-              <a href="./index.html" class="link link-current">Book</a>
-            </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Help</a>
-            </li>
-            <li class="item"><a href="" class="link">FAQ</a></li>
-            <li class="item"><a href="" class="link">Rental Policies</a></li>
-            <li class="item"><a href="" class="link">Blog&Guides</a></li>
-          </ul>
+        <nav class="header-nav" aria-label="Main navigation">
+          <div class="nav-wrapper">
+            <a href="./index.html" aria-label="Flexicar homepage">
+              <svg class="logo-icon">
+                <use href="./assets/icons/icons.svg#_1"></use></svg></a>
+            <ul class="nav-list">
+              <li class="item">
+                <a href="./index.html" class="link link-current">Book</a>
+              </li>
+              <li class="item">
+                <a href="./index.html" class="link">Help</a>
+              </li>
+              <li class="item"><a href="./index.html" class="link">FAQ</a></li>
+              <li class="item"><a href="./index.html" class="link">Rental Policies</a></li>
+              <li class="item"><a href="./index.html" class="link">Blog&Guides</a></li>
+            </ul>
+          </div>
         </nav>
-        <div class="header-actions">
-          <div class="language-switcher" aria-label="Language switcher">
-            <button class="language-btn" aria-expanded="false" aria-controls="language-menu">
+        <ul class="header-actions">
+          <li class="language-switcher" aria-label="Language switcher">
+            <button
+              class="language-btn"
+              aria-expanded="false"
+              aria-controls="language-menu"
+            >
               EN
               <svg class="chevron-icon" aria-hidden="true">
                 <use href="./assets/icons/icons.svg#chevron-down"></use>
               </svg>
             </button>
-          </div> 
-          <a href="tel:+123 456 7890" class="header-phone">
-            <svg class="phone-icon" aria-hidden="true">
-              <use href="./assets/icons/icons.svg#phone"></use>
-            </svg>
-            <span class="phone-text">+123 456 7890</span>
-          </a>
-          <div class="login-container">
-          <button type="button" class="login-btn">
-            <svg class="chevron-icon" aria-hidden="true">
-              <use href="./assets/icons/icons.svg#log-in"></use>
-            </svg>Sign In</button>
-        </div>
-        <button type="button" class="burger-menu">
-          <svg class="burger-icon">
-            <use href="./assets/icons/icons.svg#menu"></use>
-          </svg>
-        </button></div>
+          </li>
+          <li class="header-phone">
+            <a href="tel:+123 456 7890" class="phone-link">
+              <svg class="phone-icon" aria-hidden="true">
+                <use href="./assets/icons/icons.svg#phone"></use>
+              </svg>
+              <span class="phone-text">+123 456 7890</span>
+            </a>
+          </li>
+          <li class="login-container">
+            <button type="button" class="login-btn">
+              <svg class="chevron-icon" aria-hidden="true">
+                <use href="./assets/icons/icons.svg#log-in"></use></svg>Sign In
+            </button>
+          </li>
+          <li class="burger-menu">
+            <button type="button">
+              <svg class="burger-icon">
+                <use href="./assets/icons/icons.svg#menu"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -73,7 +85,7 @@
           <div class="stepper">
             <div class="stepper-icon-wrapper first">
               <span class="background icon">
-                <svg class="active-icon">
+                <svg class="active-icon" aria-label="Current step: Add on extras">
                   <use href="./assets/icons/icons.svg#Ellipse"></use></svg></span>
               <span class="line"></span>
             </div>
@@ -82,7 +94,7 @@
           <div class="stepper">
             <div class="stepper-icon-wrapper not-active">
               <span class="line medium-gray right"></span>
-              <div class="icon-wrapper">
+              <div class="icon-wrapper" aria-label="Not yet reached step: Insurance">
               <svg class="inactive-icon">
                 <use href="./assets/icons/icons.svg#Ellipse-2"></use>
               </svg>
@@ -95,7 +107,7 @@
             <div class="stepper-icon-wrapper not-active">
               <span class="line medium-gray right"></span>
               <div class="icon-wrapper">
-              <svg class="inactive-icon">
+              <svg class="inactive-icon" aria-label="Not yet reached step: Confirm order">
                 <use href="./assets/icons/icons.svg#Ellipse-2"></use>
               </svg></div>
               <span class="line medium-gray left"></span>
@@ -106,7 +118,7 @@
             <div class="stepper-icon-wrapper not-active last">
               <span class="line medium-gray right"></span>
               <div class="icon-wrapper">
-              <svg class="inactive-icon">
+              <svg class="inactive-icon" aria-label="Not yet reached step: Insurance">
                 <use href="./assets/icons/icons.svg#Ellipse-2"></use>
               </svg></div>
             </div>
@@ -129,7 +141,7 @@
               />
             </div>
             <div>
-              <h2 class="car-info-title">Volkswagen Touareg</h2>
+              <h1 class="car-info-title">Volkswagen Touareg</h1>
               <p class="sub-text-line-height gray">or similar Intermediate</p>
               <p class="sub-text-line-height">1 rental day</p>
             </div>
@@ -153,7 +165,7 @@
                   <p class="extras-price">15 EUR</p>
                 </div>
               </div>
-              <button class="extras-button active-btn">
+              <button class="extras-button active-btn" aria-label="Delete Unlimited Mileage">
                 <svg class="btn-icon">
                   <use href="./assets/icons/icons.svg#minus"></use>
                 </svg>
@@ -169,7 +181,7 @@
                   <p class="extras-price">15 EUR</p>
                 </div>
               </div>
-              <button class="extras-button">
+              <button class="extras-button" aria-label="Add Cross-border Fee" >
                 <svg class="btn-icon">
                   <use href="./assets/icons/icons.svg#plus"></use>
                 </svg>
@@ -185,7 +197,7 @@
                   <p class="extras-price">15 EUR</p>
                 </div>
               </div>
-              <button class="extras-button">
+              <button class="extras-button"  aria-label="Add Full Tank Service">
                 <svg class="btn-icon">
                   <use href="./assets/icons/icons.svg#plus"></use>
                 </svg>
@@ -201,7 +213,7 @@
                   <p class="extras-price">15 EUR</p>
                 </div>
               </div>
-              <button class="extras-button">
+              <button class="extras-button" aria-label="Add Child Seat">
                 <svg class="btn-icon">
                   <use href="./assets/icons/icons.svg#plus"></use>
                 </svg>
@@ -220,7 +232,7 @@
                 </div>
               </div>
               <button class="extras-button">
-                <svg class="btn-icon">
+                <svg class="btn-icon" aria-label="Add GPS Navigation System">
                   <use href="./assets/icons/icons.svg#plus"></use>
                 </svg>
               </button>
@@ -235,7 +247,7 @@
                   <p class="extras-price">15 EUR</p>
                 </div>
               </div>
-              <button class="extras-button">
+              <button class="extras-button" aria-label="Add Wi-Fi Hotspot">
                 <svg class="btn-icon">
                   <use href="./assets/icons/icons.svg#plus"></use>
                 </svg>
@@ -251,7 +263,7 @@
                   <p class="extras-price">15 EUR</p>
                 </div>
               </div>
-              <button class="extras-button">
+              <button class="extras-button" aria-label="Add Additional Driver">
                 <svg class="btn-icon">
                   <use href="./assets/icons/icons.svg#plus"></use>
                 </svg>
@@ -267,7 +279,7 @@
                   <p class="extras-price">15 EUR</p>
                 </div>
               </div>
-              <button class="extras-button">
+              <button class="extras-button" aria-label="Add Roadside assistance waiver">
                 <svg class="btn-icon">
                   <use href="./assets/icons/icons.svg#plus"></use>
                 </svg>
@@ -298,12 +310,12 @@
                   ./assets/images/contact-us/avatar_1@1x.png 1x,
                   ./assets/images/contact-us/avatar_1@2x.png 2x
                 "
-                alt="avatar of team"
+                alt="Avatar of a team member"
                 width="56"
                 height="56"
                 loading="lazy"
               />
-              <svg class="circle">
+              <svg class="circle" aria-hidden="true">
                 <use href="./assets/icons/icons.svg#Ellipse-green"></use>
               </svg>
             </div>
@@ -315,12 +327,12 @@
                   ./assets/images/contact-us/avatar_2@1x.png 1x,
                   ./assets/images/contact-us/avatar_2@2x.png 2x
                 "
-                alt="avatar of team"
+                alt="Avatar of a team member"
                 width="56"
                 height="56"
                 loading="lazy"
               />
-              <svg class="circle">
+              <svg class="circle" aria-hidden="true">
                 <use href="./assets/icons/icons.svg#Ellipse-green"></use>
               </svg>
             </div>
@@ -332,12 +344,12 @@
                   ./assets/images/contact-us/avatar_3@1x.png 1x,
                   ./assets/images/contact-us/avatar_3@2x.png 2x
                 "
-                alt="avatar of team"
+                alt="Avatar of a team member"
                 width="56"
                 height="56"
                 loading="lazy"
               />
-              <svg class="circle">
+              <svg class="circle" aria-hidden="true">
                 <use href="./assets/icons/icons.svg#Ellipse-green"></use>
               </svg>
             </div>
@@ -349,7 +361,7 @@
               friendly team.
             </p>
           </div>
-          <button type="button" class="main-button primary-btn btn-medium">
+          <button type="button" class="main-button primary-btn contact-btn">
             Contact Us
           </button>
         </div>
@@ -363,7 +375,7 @@
       <div class="container footer-container">
         <div class="footer-wrapper">
           <div class="footer-logo-text">
-            <a href="./index.html">
+            <a href="./index.html" aria-label="Flexicar homepage">
               <svg class="logo-footer">
                 <use href="./assets/icons/icons.svg#_1"></use></svg></a>
             <p class="sub-text-line-height gray">Your Trusted Ride Awaits.</p>

@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -18,62 +19,73 @@
 
   <!------------------ HEADER --------------------->
 
-    <header class="header">
-      <div class="nav-container">
-          <nav class="header-nav">
-            <a href="./index.html" class="logo link">
-              <svg class="logo-icon">
-                <use href="./assets/icons/icons.svg#_1"></use></svg></a>
-            <ul class="nav-list">
-              <li class="item">
-                <a href="./index.html" class="link link-current">Book</a>
-              </li>
-              <li class="item">
-                <a href="./portfolio.html" class="link">Help</a>
-              </li>
-              <li class="item"><a href="" class="link">FAQ</a></li>
-              <li class="item"><a href="" class="link">Rental Policies</a></li>
-              <li class="item"><a href="" class="link">Blog&Guides</a></li>
-            </ul>
-          </nav>
-          <div class="header-actions">
-            <div class="language-switcher" aria-label="Language switcher">
-              <button class="language-btn" aria-expanded="false" aria-controls="language-menu">
-                EN
-                <svg class="chevron-icon" aria-hidden="true">
-                  <use href="./assets/icons/icons.svg#chevron-down"></use>
-                </svg>
-              </button>
-            </div> 
-            <a href="tel:+123 456 7890" class="header-phone">
-              <svg class="phone-icon" aria-hidden="true">
-                <use href="./assets/icons/icons.svg#phone"></use>
-              </svg>
-              <span class="phone-text">+123 456 7890</span>
-            </a>
-            <div class="login-container">
-            <button type="button" class="login-btn">
-              <svg class="chevron-icon" aria-hidden="true">
-                <use href="./assets/icons/icons.svg#log-in"></use>
-              </svg>Sign In</button>
-          </div>
-          <button type="button" class="burger-menu">
+  <header class="header">
+    <div class="nav-container">
+      <nav class="header-nav" aria-label="Main navigation">
+        <div class="nav-wrapper">
+          <a href="./index.html" aria-label="Flexicar homepage">
+            <svg class="logo-icon">
+              <use href="./assets/icons/icons.svg#_1"></use></svg></a>
+          <ul class="nav-list">
+            <li class="item">
+              <a href="./index.html" class="link link-current">Book</a>
+            </li>
+            <li class="item">
+              <a href="./index.html" class="link">Help</a>
+            </li>
+            <li class="item"><a href="./index.html" class="link">FAQ</a></li>
+            <li class="item"><a href="./index.html" class="link">Rental Policies</a></li>
+            <li class="item"><a href="./index.html" class="link">Blog&Guides</a></li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="header-actions">
+        <li class="language-switcher" aria-label="Language switcher">
+          <button
+            class="language-btn"
+            aria-expanded="false"
+            aria-controls="language-menu"
+          >
+            EN
+            <svg class="chevron-icon" aria-hidden="true">
+              <use href="./assets/icons/icons.svg#chevron-down"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="header-phone">
+          <a href="tel:+123 456 7890" class="phone-link">
+            <svg class="phone-icon" aria-hidden="true">
+              <use href="./assets/icons/icons.svg#phone"></use>
+            </svg>
+            <span class="phone-text">+123 456 7890</span>
+          </a>
+        </li>
+        <li class="login-container">
+          <button type="button" class="login-btn">
+            <svg class="chevron-icon" aria-hidden="true">
+              <use href="./assets/icons/icons.svg#log-in"></use></svg>Sign In
+          </button>
+        </li>
+        <li class="burger-menu">
+          <button type="button">
             <svg class="burger-icon">
               <use href="./assets/icons/icons.svg#menu"></use>
             </svg>
-          </button></div>
-        </div>
-      </header>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
     <main>
 
-  <!------------------ CAR INFO SECTION --------------------->
-
+       <!------------------ CAR INFO SECTION --------------------->
+         
       <section class="car-info">
         <div class="stepper-container">
           <div class="stepper">
             <div class="stepper-icon-wrapper first">
               <span class="background check">
-                <svg class="indicator-icon">
+                <svg class="indicator-icon" aria-label="Completed step: Add on extras">
                   <use href="./assets/icons/icons.svg#check"></use>
                 </svg>
               </span>
@@ -85,7 +97,7 @@
             <div class="stepper-icon-wrapper second">
               <span class="line right"></span>
               <span class="background check">
-                <svg class="indicator-icon">
+                <svg class="indicator-icon" aria-label="Completed step: Insurance">
                   <use href="./assets/icons/icons.svg#check"></use>
                 </svg>
               </span>
@@ -97,7 +109,7 @@
             <div class="stepper-icon-wrapper second">
               <span class="line right"></span>
               <span class="background icon">
-                <svg class="active-icon">
+                <svg class="active-icon" aria-label="Current step: Confirm order">
                   <use href="./assets/icons/icons.svg#Ellipse"></use></svg></span>
               <span class="line"></span>
             </div>
@@ -107,16 +119,17 @@
             <div class="stepper-icon-wrapper not-active last">
               <span class="line medium-gray right"></span>
               <div class="icon-wrapper">
-              <svg class="inactive-icon">
+              <svg class="inactive-icon" aria-label="Not yet reached step: Payment" >
                 <use href="./assets/icons/icons.svg#Ellipse-2"></use>
               </svg></div>
             </div>
             <p class="stepper-text gray">Payment</p>
           </div>
         </div>
-        <div class="form-container container">
-          <h2 class="form-title">Confirming Order</h2>
-          <form class="form-order">
+        <div class="form-container container-secondary">
+          <h1 class="form-title">Confirming Order</h1>
+          <form class="form-order" aria-labelledby="form-title">
+            <div class="form-main-content">
             <div class="form-group">
             <label for="name">
               First Name<span class="required">*</span></label>
@@ -126,6 +139,8 @@
                 name="name"
                 type="text"
                 placeholder="Enter Your First Name"
+                required
+                aria-required="true"
               />
             
         </div>
@@ -138,12 +153,14 @@
                 name="last_name"
                 type="text"
                 placeholder="Enter Your Last Name"
+                required
+                aria-required="true"
               />
             
         </div>
             <div class="form-group">
               <label for="phone"
-                >Phone number<span class="required" aria-hidden="true">*</span></label>
+                >Phone number<span class="required">*</span></label>
                 <div class="phone-input-wrapper">
                   <select
                     name="country-code"
@@ -162,12 +179,14 @@
                     autocomplete="tel"
                     required
                     placeholder="+1 (555) 000-0000"
+                    aria-describedby="phone-format"
                   />
                 </div>
             </div>
             <div class="form-group">
+            
             <label for="email"
-              >Email<span class="required" aria-hidden="true">*</span></label>
+              >Email<span class="required">*</span></label>
               <input
                 type="email"
                 id="email"
@@ -175,9 +194,10 @@
                 class="styled-input"
                 placeholder="olivia@untitledui.com"
                 required
+                aria-required="true"
               />
             
-        </div>
+        </div></div>
         <div class="order-info-container">
         
         <dl class="details-list">
@@ -205,7 +225,7 @@
             </tr>
           </table>
         </div>
-        <div class="form-group checkbox-group">
+        <div class="checkbox-group">
             <label class="checkbox-label">
               <input type="checkbox" name="terms" required>
               <span class="custom-checkbox">
@@ -219,42 +239,25 @@
           <div class="container-buttons">
             <button
           href="./product_page_step1.html"
-          class="main-button secondary-btn btn-large"
+          class="main-button secondary-btn pay-btn"
         >
-        Pay Later 62,98 EUR 
+        Pay Later <span class="sub-price">62,98 EUR</span> 
         </button>
         <button
           href="./product_page_step1.html"
-          class="main-button primary-btn btn-large"
+          class="main-button primary-btn pay-btn"
         >
-         Pay Now 62,98 EUR 
-         <svg class="card-icon">
-            <use href="./assets/icons/icons.svg#credit-card"></use>
-          </svg> 
-        </button>
-          </div>
-          <div class="container-buttons desktop">
-            <button
-          href="./product_page_step1.html"
-          class="main-button secondary-btn btn-large"
-        >
-        Pay Later 62,98 EUR 
-        </button>
-        <button
-          href="./product_page_step1.html"
-          class="main-button primary-btn btn-large"
-        >
-         Pay Now 62,98 EUR 
+         Pay Now <span class="sub-price">62,98 EUR</span> 
          <svg class="card-icon">
             <use href="./assets/icons/icons.svg#credit-card"></use>
           </svg> 
         </button>
           </div>
           </form>
+        <!-- </div> -->
         </div>
       </section>
 
-  <!------------------ CONTACT US SECTION --------------------->  
 
       <section class="contact-us">
         <div class="container">
@@ -269,12 +272,12 @@
                     ./assets/images/contact-us/avatar_1@1x.png 1x,
                     ./assets/images/contact-us/avatar_1@2x.png 2x
                   "
-                  alt="avatar of team"
+                  alt="Avatar of a team member"
                   width="56"
                   height="56"
                   loading="lazy"
                 />
-                <svg class="circle">
+                <svg class="circle" aria-hidden="true">
                   <use href="./assets/icons/icons.svg#Ellipse-green"></use>
                 </svg>
               </div>
@@ -286,12 +289,12 @@
                     ./assets/images/contact-us/avatar_2@1x.png 1x,
                     ./assets/images/contact-us/avatar_2@2x.png 2x
                   "
-                  alt="avatar of team"
+                  alt="Avatar of a team member"
                   width="56"
                   height="56"
                   loading="lazy"
                 />
-                <svg class="circle">
+                <svg class="circle" aria-hidden="true">
                   <use href="./assets/icons/icons.svg#Ellipse-green"></use>
                 </svg>
               </div>
@@ -303,12 +306,12 @@
                     ./assets/images/contact-us/avatar_3@1x.png 1x,
                     ./assets/images/contact-us/avatar_3@2x.png 2x
                   "
-                  alt="avatar of team"
+                  alt="Avatar of a team member"
                   width="56"
                   height="56"
                   loading="lazy"
                 />
-                <svg class="circle">
+                <svg class="circle" aria-hidden="true">
                   <use href="./assets/icons/icons.svg#Ellipse-green"></use>
                 </svg>
               </div>
@@ -320,7 +323,7 @@
                 friendly team.
               </p>
             </div>
-            <button type="button" class="main-button primary-btn btn-medium">
+            <button type="button" class="main-button primary-btn contact-btn">
               Contact Us
             </button>
           </div>
@@ -328,13 +331,13 @@
       </section>
     </main>
 
-   <!------------------ FOOTER --------------------->  
+  
 
     <footer class="footer-section">
       <div class="container footer-container">
         <div class="footer-wrapper">
           <div class="footer-logo-text">
-            <a href="./index.html">
+            <a href="./index.html" aria-label="Flexicar homepage">
               <svg class="logo-footer">
                 <use href="./assets/icons/icons.svg#_1"></use></svg></a>
             <p class="sub-text-line-height gray">Your Trusted Ride Awaits.</p>
@@ -351,6 +354,7 @@
                 class="main-button secondary-btn subscribe-btn"
                 type="submit"
               >
+              
                 Subscribe
               </button>
             </form>
