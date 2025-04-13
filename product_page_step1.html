@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Flexicar car rental website" />
+    <title>Flexicar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -67,7 +68,7 @@
             </button>
           </li>
           <li class="burger-menu">
-            <button type="button">
+            <button type="button" aria-controls="mobile-menu">
               <svg class="burger-icon">
                 <use href="./assets/icons/icons.svg#menu"></use>
               </svg>
@@ -94,8 +95,8 @@
           <div class="stepper">
             <div class="stepper-icon-wrapper not-active">
               <span class="line medium-gray right"></span>
-              <div class="icon-wrapper" aria-label="Not yet reached step: Insurance">
-              <svg class="inactive-icon">
+              <div class="icon-wrapper">
+              <svg class="inactive-icon" aria-label="Not yet reached step: Insurance">
                 <use href="./assets/icons/icons.svg#Ellipse-2"></use>
               </svg>
             </div>
