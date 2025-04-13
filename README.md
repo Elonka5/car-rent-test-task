@@ -29,13 +29,13 @@ The website has been designed to be fully responsive across the following breakp
 Here are some screenshots demonstrating the website on different screen sizes:
 
 ### Mobile View (393px)
-![Mobile View](https://res.cloudinary.com/delucxgla/image/upload/v1744578845/Mobile_-_Product_Page_-_step_1_uskhpb.jpg)
+![Mobile View](https://res.cloudinary.com/delucxgla/image/upload/v1744580167/Mobile_-_Product_Page_-_step_1_iqwjqz.jpg)
 
 ### Tablet View (768px)
-![Tablet View](https://res.cloudinary.com/delucxgla/image/upload/v1744578845/Tablet_-_Payment_Success_hu2sdn.jpg)
+![Tablet View](https://res.cloudinary.com/delucxgla/image/upload/v1744580167/Tablet_-_Payment_Success_v45i3c.jpg)
 
 ### Desktop View (1920px)
-![Desktop View](https://res.cloudinary.com/delucxgla/image/upload/v1744578845/Desktop_-_Product_Page_ohf864.jpg)
+![Desktop View](https://res.cloudinary.com/delucxgla/image/upload/v1744580173/Desktop_-_Product_Page_lydpgl.png)
 
 ## Installation
 
